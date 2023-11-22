@@ -1,0 +1,48 @@
+.certs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.certs-container {
+    position: relative;
+      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.certs h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 3rem;
+}
+
+.cert {
+    width: 70%;
+    margin-bottom: 2rem;
+    z-index: 55;
+}
+
+.link {
+    margin-top: 5rem;
+    color: var(--main-color-1);
+    font-size: 3rem;
+    transition: color .200ms ease-in;
+}
+
+.link:hover {
+    color: white;
+}
+
+@media (max-width: 40em) {
+ 
+.cert {
+    width: 96%;
+    margin-bottom: 2rem;
+    z-index: 55;
+}
+}

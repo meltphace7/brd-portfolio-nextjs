@@ -1,0 +1,165 @@
+.contact-section {
+  width: 100%;
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color-bg-1);
+}
+
+.title-container {
+  margin: 0rem 0rem 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+}
+
+.title-container h2 {
+  color: var(--main-color-1);
+}
+
+.form {
+  background-color: rgba(5, 5, 5, 0.608);
+  color: white;
+  border-radius: 5px;
+  width: 50%;
+  min-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 10rem;
+  border: 1px solid var(--main-color-1);
+  font-size: 17px;
+  -webkit-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
+}
+
+.form__row {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form__group__top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 47%;
+}
+
+.form__group label {
+  color: var(--main-color-text-grey);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.form__group__top label {
+  color: var(--main-color-text-grey);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form__row input {
+  width: 98%;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 3px;
+  background-color: var(--main-color-bg-2);
+  color: white;
+  border: 1px solid grey;
+}
+
+.form__message {
+  height: 20rem;
+  min-width: 98%;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: var(--main-color-bg-2);
+  color: white;
+  border: 1px solid grey;
+}
+
+.form__input--subject {
+  width: 98%;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 3px;
+  background-color: var(--main-color-bg-2);
+  color: white;
+  border: 1px solid grey;
+}
+
+.form button {
+  margin: auto 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  height: 6rem;
+  border-radius: 3px;
+  transition: all 200ms;
+}
+
+.form button:hover {
+  color: var(--main-color-1);
+  border: 1px solid var(--main-color-1);
+}
+
+.success-message {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.ok-button {
+  margin-top: 5rem;
+  width: 100%;
+  height: 5rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.2s ease-in;
+}
+
+.ok-button:hover {
+  color: var(--main-color-1);
+  border: 1px solid var(--main-color-1);
+}
+
+@media (max-width: 55em) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 40em) {
+  .form {
+    width: 90%;
+  }
+
+  .contact {
+    padding-top: 0rem;
+    min-height: 80vh;
+  }
+
+  .title {
+  font-size: 5rem;
+  color: white;
+}
+
+}
