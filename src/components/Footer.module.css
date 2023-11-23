@@ -16,6 +16,7 @@
 
 .logo-container img {
   height: 6rem;
+  width: auto;
   margin-right: 0.5rem;
 }
 

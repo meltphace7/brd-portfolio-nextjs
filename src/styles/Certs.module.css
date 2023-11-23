@@ -23,6 +23,7 @@
 
 .cert {
     width: 70%;
+    height: auto;
     margin-bottom: 2rem;
     z-index: 55;
 }

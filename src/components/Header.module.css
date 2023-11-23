@@ -14,22 +14,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #03384ed2; */
   animation: bgFade 4000ms ease-in forwards;
 }
 
 @keyframes bgFade {
-    0% {
-background-color: #03384e;
-    }
+  0% {
+    background-color: #03384e;
+  }
 
-        50% {
-background-color: #03384e;
-    }
+  50% {
+    background-color: #03384e;
+  }
 
-    100% {
-        background-color: #03384ed2;
-    }
+  100% {
+    background-color: #03384ed2;
+  }
 }
 
 .title-container {
@@ -47,51 +46,37 @@ background-color: #03384e;
 }
 
 .title-container h1 {
-    position: relative;
-  font-size: 9rem;
+  position: relative;
+  font-size: 6vw;
   font-weight: 300;
   color: white;
   animation: fadeIn 1000ms ease-in forwards;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        /* top: -10rem; */
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-         /* top: 0rem; */
-    }
-
+  100% {
+    opacity: 1;
+  }
 }
 
 .title-container h2 {
-  font-size: 3rem;
+  font-size: 3vw;
   color: var(--main-color-1);
   background-color: black;
   padding: 1rem;
+  animation: h2FadeIn 2000ms ease-in;
 }
 
-@media (max-width: 60em) {
-.title-container h1 {
-  font-size: 7rem;
-}
-}
+@keyframes h2FadeIn {
+  0% {
+    opacity: 0;
+  }
 
-@media (max-width: 50em) {
-.title-container h1 {
-  font-size: 6rem;
+  100% {
+    opacity: 1;
+  }
 }
-}
-
-@media (max-width: 40em) {
-.title-container h1 {
-  font-size: 4rem;
-}
-.title-container h2 {
-  font-size: 2rem;
-}
-}
-

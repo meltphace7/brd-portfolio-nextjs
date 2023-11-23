@@ -27,7 +27,7 @@
   background-color: rgba(5, 5, 5, 0.608);
   color: white;
   border-radius: 5px;
-  width: 50%;
+  width: 55%;
   min-height: 45rem;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@
 .form__row input {
   width: 98%;
   padding: 0.5rem;
-  height: 2rem;
+  height: 3rem;
   border-radius: 3px;
   background-color: var(--main-color-bg-2);
   color: white;
@@ -96,7 +96,7 @@
 .form__input--subject {
   width: 98%;
   padding: 0.5rem;
-  height: 2rem;
+  height: 3rem;
   border-radius: 3px;
   background-color: var(--main-color-bg-2);
   color: white;

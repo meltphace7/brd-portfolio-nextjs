@@ -1,16 +1,21 @@
-import classes from "./Certs.module.css";
+import classes from "@/styles/Certs.module.css";
 import ReactDOM from "react-dom";
 // import { Link } from "react-router-dom";
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 import React, { Fragment } from "react";
-import javascriptCert from "../assets/certs/javascript-cert.jpeg";
-import reactCert from "../assets/certs/react-cert.jpeg";
-import typescriptCert from "../assets/certs/typescript-cert.jpeg";
-import htmlCert from "../assets/certs/html-css-sass-cert.jpeg";
-import nodeCert from "../assets/certs/node-cert.jpeg";
-import nextCert from "../assets/certs/NEXTJS-CERT.jpeg";
+import javascriptCert from "../../../public/assets/certs/javascript-cert.jpeg";
+import reactCert from "../../../public/assets/certs/react-cert.jpeg";
+import typescriptCert from "../../../public/assets/certs/typescript-cert.jpeg";
+import htmlCert from "../../../public/assets/certs/html-css-sass-cert.jpeg";
+import nodeCert from "../../../public/assets/certs/node-cert.jpeg";
+import nextCert from "../../../public/assets/certs/NEXTJS-CERT.jpeg";
 
-const certs = () => {
+interface CertsProps {
+  close: () => void;
+}
+
+const Certs: React.FC<CertsProps> = (props) => {
   return (
     <Fragment>
       <div className={classes.certs}>
@@ -31,7 +36,11 @@ const certs = () => {
           src={typescriptCert}
           alt="Typescript certification"
         />
-        <Image className={classes.cert} src={htmlCert} alt="HTML certification" />
+        <Image
+          className={classes.cert}
+          src={htmlCert}
+          alt="HTML certification"
+        />
         <Image
           className={classes.cert}
           src={nodeCert}
@@ -42,12 +51,12 @@ const certs = () => {
           src={nextCert}
           alt="NextJs certification"
         />
-        {/* <Link className={classes.link} to="/home">
+        <Link className={classes.link} href="/">
           Return to Main Page
-        </Link> */}
+        </Link>
       </div>
     </Fragment>
   );
 };
 
-export default certs;
+export default Certs;

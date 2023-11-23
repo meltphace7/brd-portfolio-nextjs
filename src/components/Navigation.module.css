@@ -11,7 +11,7 @@
 }
 
 .logo-container {
-  margin-left: 10rem;
+  margin: 1rem 0 0 12rem;
   display: flex;
   align-items: center;
 }
@@ -19,7 +19,6 @@
 .logo-container img {
   height: 7rem;
   width: auto;
-  margin: 1rem 0 0 2rem;
   animation: fadeIn 2000ms ease-in forwards;
 }
 
@@ -29,7 +28,7 @@
   }
 
   70% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
@@ -38,7 +37,7 @@
 }
 
 .nav-menu {
-  width: 50%;
+  width: 60%;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -49,21 +48,17 @@
 }
 
 @keyframes slideIn {
-    0% {
-        right: -75rem;
-    }
+  0% {
+    right: -75rem;
+  }
 
-      100% {
-        right: 0rem;
-    }
-}
-
-.nav-menu li {
-  font-size: 1.9rem;
+  100% {
+    right: 0rem;
+  }
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   transition: color 150ms ease-in;
 }
@@ -106,14 +101,13 @@
   }
 
   .logo-container {
-    margin-left: 3rem;
+    margin: 1rem 0 0 2rem;
     display: flex;
     align-items: center;
   }
 
   .logo-container img {
     height: 7rem;
-    margin: 1rem 0 0 0rem;
   }
 }
 
@@ -123,9 +117,7 @@
   }
 
   .logo-container {
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
+    margin: 1rem 0 0 1rem;
   }
 
   .logo-container img {

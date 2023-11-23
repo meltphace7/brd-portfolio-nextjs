@@ -7,10 +7,12 @@ import BioSection from '../components/BioSection';
 import SkillsSection from "../components/Skills";
 import ProjectSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
+import Footer from '../components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -26,7 +28,8 @@ export default function Home() {
         <SkillsSection />
         <ProjectSection />
         <ContactSection />
+        <Footer />
       </main>
     </>
-  )
+  );
 }

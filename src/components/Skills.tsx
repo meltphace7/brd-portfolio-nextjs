@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import Link from 'next/link';
 import classes from "./Skills.module.css";
 import { SiJavascript } from "react-icons/si";
 import { SiReact } from "react-icons/si";
@@ -61,9 +61,9 @@ const Skills: React.FC = () => {
           </p>
           <p>
             My certifications can be found{" "}
-            {/* <Link className={classes.link} to="/certs"> */}
+            <Link className={classes.link} href="/certs">
               here
-            {/* </Link>{" "} */}
+            </Link>{" "}
             and you can find my project repos on{" "}
             <a
               className={classes.link}

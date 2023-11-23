@@ -3,10 +3,102 @@
   --main-color-2: #cd32b3;
 
   /* --main-color-bg-1:#181818; */
-   --main-color-bg-1:#03384e;
+  --main-color-bg-1:#03384e;
   --main-color-bg-2:#012332; ;
 
    --main-color-text-grey:#e1e1e1;
+}
+
+@font-face {
+  font-family: "Clash-Display";
+  src:url('../../public/assets/fonts/ClashDisplay-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash-Display";
+  src:url('../../public/assets/fonts/ClashDisplay-Semibold.woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash-Display";
+  src:url('../../public/assets/fonts/ClashDisplay-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash-Display";
+  src:url('../../public/assets/fonts/ClashDisplay-Light.woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* ____ */
+
+@font-face {
+  font-family: "Panchang";
+  src:url('../../public/assets/fonts/Panchang-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src:url('../../public/assets/fonts/Panchang-Extralight.woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src:url('../../public/assets/fonts/Panchang-Light.woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src:url('../../public/assets/fonts/Panchang-Medium.woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src:url('../../public/assets/fonts/Panchang-Semibold.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src:url('../../public/assets/fonts/Panchang-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src:url('../../public/assets/fonts/Satoshi-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:url('../../public/assets/fonts/Chillax-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chillax";
+  src:url('../../public/assets/fonts/Chillax-Semibold.woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
 *,
@@ -14,7 +106,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -39,7 +131,6 @@ html {
 body {
   overflow-x: hidden;
   width: 100%;
-  font-family: "Raleway", "barlow", sans-serif;
   font-weight: 200;
   letter-spacing: 0.05rem;
   background-color: var(--main-color-bg-1);
@@ -51,24 +142,25 @@ body {
  }
 }
 
-p {
+
+p, li, a, label, div, label, textarea, button {
+   font-family: "Chillax", sans-serif;
   font-size: 1.6rem;
-  line-height: 2.25rem;
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: normal;
+  font-family: "Panchang", sans-serif;
+  font-size: 3.2rem;
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: normal;
+  font-family: "Panchang", sans-serif;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: normal;
+  font-family: "Panchang", sans-serif;
+  font-size: 1.9rem;
 }
 
 li {
@@ -76,30 +168,10 @@ li {
 }
 
 a {
-  font-size: 1.6rem;
+  color: unset;
   text-decoration: none;
-}
-
-a:hover {
   cursor: pointer;
-}
-
-button {
-  letter-spacing: 0.05rem;
-  font-size: 1.6rem;
-  border: unset;
-  font-family: inherit;
-  cursor: pointer;
-}
-
-label {
-  font-size: 1.6rem;
-  font-family: inherit;
-}
-
-select {
-  font-family: inherit;
-  font-size: 17px;
+  transition: color 250ms ease-in;
 }
 
 input[type='text'],

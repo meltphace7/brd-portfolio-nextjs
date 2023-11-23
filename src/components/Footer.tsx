@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Footer.module.css";
 import Image from 'next/image'
-import logo from "../assets/images/BDLOGO-white.png";
+import logo from "../../public/assets/imgs/BDLOGO-white.png";
 
 const Footer: React.FC = () => {
   return (
