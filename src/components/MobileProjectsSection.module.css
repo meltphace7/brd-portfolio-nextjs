@@ -33,7 +33,7 @@
 }
 
 .project-title:hover {
-  color: var(--main-color-1);
+  color: var(-color-primary);
 }
 
 .project-img {
@@ -70,8 +70,8 @@
 .project-description {
   width: 97%;
   margin: 2rem 0;
-  background-color: var(--main-color-bg-2);
-  color: var(--main-color-text-grey);
+  background-color: var(--color-bg-2);
+  color: var(--color-text-grey);
   z-index: 2;
   padding: 1rem;
   border-radius: 5px;
