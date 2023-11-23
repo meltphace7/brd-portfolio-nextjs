@@ -21,10 +21,10 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id="contact" className={classes["contact-section"]}>
-      <div className={classes["title-container"]}>
-        <h1 className={classes["title"]}>Contact</h1>
-        <h2>brock.dallman@gmail.com</h2>
-      </div>
+   
+        <h1 className="section-title">Contact</h1>
+
+      <h2 className={classes['email']}>brock.dallman@gmail.com</h2>
 
       <form onSubmit={handleSubmit} className={classes.form} id="contact-form">
         <div className={classes.form__row}>

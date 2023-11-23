@@ -4,14 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--main-color-bg-1);
+  background-color: var(--color-bg-1);
   color: white;
   padding-bottom: 5rem;
-}
-
-.projects-section h1 {
-  font-size: 7rem;
-  margin-bottom: 5rem;
 }
 
 .projects {
@@ -37,7 +32,7 @@
 }
 
 .project-link:hover ~ .project-img {
-  border: 2px solid var(--main-color-1);
+  border: 2px solid var(--color-primary);
 }
 
 .project-title {
@@ -48,7 +43,7 @@
 }
 
 .project-title:hover {
-  color: var(--main-color-1);
+  color: var(--color-primary);
 }
 
 .project-img {
@@ -88,11 +83,11 @@
 }
 
 .project-header h3 {
-  color: var(--main-color-1);
+  color: var(--color-primary);
 }
 
 .project-header-alt h3 {
-  color: var(--main-color-1);
+  color: var(--color-primary);
 }
 
 .project-header h2 {
@@ -106,8 +101,8 @@
 .project-description {
   width: 110%;
   margin: 2rem 0;
-  background-color: var(--main-color-bg-2);
-  color: var(--main-color-text-grey);
+  background-color: var(--color-bg-2);
+  color: var(--color-text-grey);
   z-index: 2;
   padding: 2rem 2rem 2rem 4rem;
   border-radius: 5px;
@@ -119,8 +114,8 @@
 .project-description-alt {
   width: 110%;
   margin: 2rem 0;
-  background-color: var(--main-color-bg-2);
-  color: var(--main-color-text-grey);
+  background-color: var(--color-bg-2);
+  color: var(--color-text-grey);
   z-index: 2;
   padding: 2rem 2rem 2rem 4rem;
   border-radius: 5px;
@@ -138,7 +133,7 @@
 
 .project-technologies li {
   font-size: 1.6rem;
-  color: var(--main-color-1);
+  color: var(--color-primary);
 }
 
 @media (max-width: 48em) {
@@ -153,10 +148,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15rem;
-  }
-  .projects-section h1 {
-    font-size: 5rem;
-    margin-bottom: 10rem;
   }
 
   .tt-header {
@@ -183,8 +174,8 @@
     top: -5rem;
     width: 90%;
     margin: 0rem 0;
-    background-color: var(--main-color-bg-2);
-    color: var(--main-color-text-grey);
+    background-color: var(--color-bg-2);
+    color: var(--color-text-grey);
     z-index: 2;
     padding: 2rem 2rem 2rem 4rem;
     border-radius: 5px;

@@ -15,7 +15,7 @@ import ProjectAlt from "./projects/ProjectAlt";
 const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className={classes["projects-section"]}>
-      <h1>Projects</h1>
+      <h1 className="section-title">Projects</h1>
 
       <div className={classes["projects"]}>
 

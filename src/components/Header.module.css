@@ -51,6 +51,12 @@
   font-weight: 300;
   color: white;
   animation: fadeIn 1000ms ease-in forwards;
+
+
+      color: transparent;
+  background-image: linear-gradient(to right, #fff, var(--color-primary));
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 @keyframes fadeIn {
@@ -65,7 +71,7 @@
 
 .title-container h2 {
   font-size: 3vw;
-  color: var(--main-color-1);
+  color: var(--color-primary);
   background-color: black;
   padding: 1rem;
   animation: h2FadeIn 2000ms ease-in;

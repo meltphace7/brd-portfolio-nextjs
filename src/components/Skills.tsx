@@ -16,7 +16,7 @@ import Icon from "../../public/assets/imgs/mongoose.js";
 const Skills: React.FC = () => {
   return (
     <section id="expertise" className={classes["skills-section"]}>
-      <h1>Expertise</h1>
+      <h1 className="section-title">Expertise</h1>
       <div className={classes["skills-container"]}>
         <div className={classes["skills-overview"]}>
           <p>

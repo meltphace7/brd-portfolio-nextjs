@@ -1,102 +1,99 @@
 :root {
-  --main-color-1: #00d9ff;
-  --main-color-2: #cd32b3;
+  --color-primary: #00d9ff;
+  --color-2: #cd32b3;
 
-  /* --main-color-bg-1:#181818; */
-  --main-color-bg-1:#03384e;
-  --main-color-bg-2:#012332; ;
+  --color-bg-1: #03384e;
+  --color-bg-2: #012332;
 
-   --main-color-text-grey:#e1e1e1;
+  --color-text-grey: #e1e1e1;
 }
 
 @font-face {
   font-family: "Clash-Display";
-  src:url('../../public/assets/fonts/ClashDisplay-Regular.woff2');
+  src: url("../../public/assets/fonts/ClashDisplay-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Clash-Display";
-  src:url('../../public/assets/fonts/ClashDisplay-Semibold.woff2');
+  src: url("../../public/assets/fonts/ClashDisplay-Semibold.woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Clash-Display";
-  src:url('../../public/assets/fonts/ClashDisplay-Bold.woff2');
+  src: url("../../public/assets/fonts/ClashDisplay-Bold.woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Clash-Display";
-  src:url('../../public/assets/fonts/ClashDisplay-Light.woff2');
+  src: url("../../public/assets/fonts/ClashDisplay-Light.woff2");
   font-weight: 100;
   font-style: normal;
 }
 
-/* ____ */
-
 @font-face {
   font-family: "Panchang";
-  src:url('../../public/assets/fonts/Panchang-Regular.woff2');
+  src: url("../../public/assets/fonts/Panchang-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Panchang";
-  src:url('../../public/assets/fonts/Panchang-Extralight.woff2');
+  src: url("../../public/assets/fonts/Panchang-Extralight.woff2");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Panchang";
-  src:url('../../public/assets/fonts/Panchang-Light.woff2');
+  src: url("../../public/assets/fonts/Panchang-Light.woff2");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Panchang";
-  src:url('../../public/assets/fonts/Panchang-Medium.woff2');
+  src: url("../../public/assets/fonts/Panchang-Medium.woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Panchang";
-  src:url('../../public/assets/fonts/Panchang-Semibold.woff2');
+  src: url("../../public/assets/fonts/Panchang-Semibold.woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Panchang";
-  src:url('../../public/assets/fonts/Panchang-Bold.woff2');
+  src: url("../../public/assets/fonts/Panchang-Bold.woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src:url('../../public/assets/fonts/Satoshi-Regular.woff2');
+  src: url("../../public/assets/fonts/Satoshi-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Chillax";
-  src:url('../../public/assets/fonts/Chillax-Regular.woff2');
+  src: url("../../public/assets/fonts/Chillax-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Chillax";
-  src:url('../../public/assets/fonts/Chillax-Semibold.woff2');
+  src: url("../../public/assets/fonts/Chillax-Semibold.woff2");
   font-weight: bold;
   font-style: normal;
 }
@@ -137,14 +134,20 @@ body {
 }
 
 @media (max-width: 40em) {
- body {
+  body {
     background-color: black;
- }
+  }
 }
 
-
-p, li, a, label, div, label, textarea, button {
-   font-family: "Chillax", sans-serif;
+p,
+li,
+a,
+label,
+div,
+label,
+textarea,
+button {
+  font-family: "Chillax", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -174,8 +177,26 @@ a {
   transition: color 250ms ease-in;
 }
 
-input[type='text'],
-input[type='number'],
+input[type="text"],
+input[type="number"],
 textarea {
   font-size: 17px;
+}
+
+.section-title {
+  font-size: 5vw;
+  margin-bottom: 5rem;
+  /* color: #fff; */
+
+  color: transparent;
+  background-image: linear-gradient(to right, #fff, var(--color-primary));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@media (max-width: 50em) {
+  .section-title {
+    font-size: 8vw;
+    margin-bottom: 5rem;
+  }
 }

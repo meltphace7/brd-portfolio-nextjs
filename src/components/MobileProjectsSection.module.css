@@ -22,7 +22,7 @@
 }
 
 .project-link:hover ~ .project-img {
-  border: 2px solid var(--main-color-1);
+  border: 2px solid var(--color-primary);
 }
 
 .project-title {
@@ -60,7 +60,7 @@
 }
 
 .project-header h3 {
-  color: var(--main-color-1);
+  color: var(--color-primary);
 }
 
 .project-header h2 {

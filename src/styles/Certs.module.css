@@ -17,7 +17,7 @@
 
 .certs h1 {
     font-size: 3rem;
-    color: white;
+    color: #fff;
     margin: 3rem;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .link:hover {
-    color: white;
+    color: #fff;
 }
 
 @media (max-width: 40em) {

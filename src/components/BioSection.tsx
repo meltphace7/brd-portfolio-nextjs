@@ -6,7 +6,7 @@ import BioPic from "../../public/assets/imgs/BROCK_MTN-PORTRAIT-HQ.jpg";
 const BioSection: React.FC = () => {
   return (
     <section id="about" className={classes["bio-section"]}>
-      <h1>About Me</h1>
+      <h1 className="section-title">About Me</h1>
       <div className={classes["bio-container"]}>
         <div className={classes["bio-text"]}>
           <p>
