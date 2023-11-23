@@ -33,10 +33,11 @@ const Skills: React.FC = () => {
             I specialize in the React frontend framework, the MERN
             stack(MongoDB, Express, React, NodeJS) and NextJS. NextJS, which
             builds and expands upon the core features of React, has become my
-            framework of choice. It's core features like server side rendering,
-            file based routing, built in API and improved SEO, result in an
-            improved experience for both the client and the developer. I have
-            experience migrating several React projects to the NextJS framework.
+            framework of choice. It&apos;s core features like server side
+            rendering, file based routing, built in API and improved SEO, result
+            in an improved experience for both the client and the developer. I
+            have experience migrating several React projects to the NextJS
+            framework.
           </p>
 
           <p>
