@@ -23,7 +23,7 @@ const BioSection: React.FC = () => {
             &nbsp;and&nbsp;
             <a
               className={classes["bio-link"]}
-              href="https://brockdallmanart.netlify.app/"
+              href="https://brockdallmanart.com/"
               target="_blank"
               rel="noreferrer"
             >
