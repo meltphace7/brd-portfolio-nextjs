@@ -74,8 +74,7 @@ const MobileProjectsSection: React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <h2>Brock Dallman</h2>
-            <h2>Photography</h2>
+            Brock Dallman Photography
           </a>
         </div>
         <Image

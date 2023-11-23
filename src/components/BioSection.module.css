@@ -58,9 +58,10 @@
   color: white;
 }
 
+
 @media (max-width: 60em) {
 .bio-container {
-    width: 90%;
+    width: 85%;
     padding: 1rem;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -74,5 +75,11 @@
   .bio-text {
     width: 97%;
     color: var(--color-text-grey);
+  }
+}
+
+@media (max-width: 35em) {
+  .bio-container {
+    width: 95%;
   }
 }

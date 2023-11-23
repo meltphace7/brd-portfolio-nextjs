@@ -97,6 +97,12 @@
   color: white;
 }
 
+@media (max-width: 55em) {
+   .skills-container {
+      width: 80%;
+   }
+}
+
 @media (max-width: 40em) {
   .skills-container {
     min-height: 20rem;

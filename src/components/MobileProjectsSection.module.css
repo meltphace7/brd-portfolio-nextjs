@@ -89,7 +89,7 @@
 
 .project-technologies li {
   font-size: 1.6rem;
-  color: var(--main-color-1);
+  color: var(--color-primary);
 }
 
 @media (max-width: 48em) {
