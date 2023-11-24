@@ -16,8 +16,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Brock Dallman</title>
-        <meta name="description" content="Brock Dallman Web Developer Official Site" />
+        <title>Brock Dallman Web Developer Official Site</title>
+        <meta
+          name="description"
+          content="Brock Dallman's official web development portfolio site"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
