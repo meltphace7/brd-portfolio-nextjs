@@ -18,7 +18,6 @@ const ProjectsSection: React.FC = () => {
       <h1 className="section-title">Projects</h1>
 
       <div className={classes["projects"]}>
-
         <Project
           title="Trail Tracker"
           description="Trail Tracker is a React app that allows a user to discover new
@@ -81,12 +80,13 @@ const ProjectsSection: React.FC = () => {
 
         <ProjectAlt
           title="Beer Quest"
-          description="Tieton Constuction is a business website made with NextJS. This
-                website is totally responsive and features the standard pages
-                found in a typical construction company website. It also
-                features a project portfolio gallery complete with an image
-                slider. Aside from the website I also designed the companies
-                logo."
+          description=" Beer Quest is a React app that allows a user to search for
+              breweries in a city. When the user selects a brewery, data is
+              displayed like the phone number, address and a link to their
+              website. When users click the address link, they are redirected to
+              google maps with the address to the brewery plugged in. Users can
+              save a brewery by adding it to their favorites which are stored on
+              their browser in local storage."
           link="https://beer-quest.vercel.app/"
           image={BeerQuestIMG}
           stack={["React"]}
