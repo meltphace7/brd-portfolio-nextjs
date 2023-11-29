@@ -6,6 +6,7 @@ import BDPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot
 import AlpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
 import BeerQuestIMG from "../../public/assets/imgs/beer-quest_screen-shot-1.jpg";
 import TietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
+import RojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
 import BDArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
 
 const MobileProjectsSection: React.FC = () => {
@@ -74,7 +75,8 @@ const MobileProjectsSection: React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Brock Dallman<br/> Photography
+            Brock Dallman
+            <br /> Photography
           </a>
         </div>
         <Image
@@ -94,6 +96,7 @@ const MobileProjectsSection: React.FC = () => {
           </div>
           <ul className={classes["project-technologies"]}>
             <li>React</li>
+            <li>NextJS</li>
             <li>Node</li>
             <li>Express</li>
             <li>MongoDB</li>
@@ -193,6 +196,91 @@ const MobileProjectsSection: React.FC = () => {
       <div className={classes["project"]}>
         <a
           className={classes["project-link"]}
+          href="https://brockdallmanart.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+        </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://brockdallmanart.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Brock Dallman Art
+          </a>
+        </div>
+        <Image
+          className={classes["project-img"]}
+          src={BDArtIMG}
+          alt="Brock Dallman Art website screenshot"
+        />
+        <div className={classes["project-text"]}>
+          <div className={classes["project-description"]}>
+            <p>
+              Brock Dallman Art is my fully responsive personal art website.
+              Created with NextJS, brockdallmanart.com utilizes NextJS features
+              like server side rendering, file based routing, dynamic image
+              optimization, improved SEO and a built in API.
+            </p>
+          </div>
+          <ul className={classes["project-technologies"]}>
+            <li>NextJS</li>
+            <li>React</li>
+            <li>MongoDB</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className={classes["project"]}>
+        <a
+          className={classes["project-link"]}
+          href="https://rojosmexicancuisine.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+        </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://rojosmexicancuisine.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Rojo&apos;s Mexican Cuisine
+          </a>
+        </div>
+        <Image
+          className={classes["project-img"]}
+          src={RojosIMG}
+          alt="Rojo's Mexican Cuisine website screenshot"
+        />
+        <div className={classes["project-text"]}>
+          <div className={classes["project-description"]}>
+            <p>
+              Rojo&apos;s Mexican Cuisine is a business website for a small
+              scale restaurant. I went with a more whimsical design which
+              featured a vibrant color scheme and lots of images of food. The
+              site features menu, about, catering and contact pages. It is fully
+              responsive and is sure to whet any viewer&apos;s appetite.
+            </p>
+          </div>
+          <ul className={classes["project-technologies"]}>
+            <li>NextJS</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className={classes["project"]}>
+        <a
+          className={classes["project-link"]}
           href="https://beer-quest.vercel.app/"
           target="_blank"
           rel="noreferrer"
@@ -229,49 +317,6 @@ const MobileProjectsSection: React.FC = () => {
           </div>
           <ul className={classes["project-technologies"]}>
             <li>React</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className={classes["project"]}>
-        <a
-          className={classes["project-link"]}
-          href="https://brockdallmanart.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" "}
-        </a>
-        <div className={classes["project-header"]}>
-          <h3>Featured Project</h3>
-          <a
-            className={classes["project-title"]}
-            href="https://brockdallmanart.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Brock Dallman Art
-          </a>
-        </div>
-        <Image
-          className={classes["project-img"]}
-          src={BDArtIMG}
-          alt="Brock Dallman Art website screenshot"
-        />
-        <div className={classes["project-text"]}>
-          <div className={classes["project-description"]}>
-            <p>
-              Brock Dallman Art is my fully responsive personal art website.
-              Created with NextJS, brockdallmanart.com utilizes NextJS features
-              like server side rendering, file based routing, dynamic image
-              optimization, improved SEO and a built in API.
-            </p>
-          </div>
-          <ul className={classes["project-technologies"]}>
-            <li>NEXTJS</li>
-            <li>REACT</li>
-            <li>MongoDB</li>
-            <li>AWS</li>
           </ul>
         </div>
       </div>

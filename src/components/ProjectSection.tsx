@@ -5,6 +5,7 @@ import TrailTrackerIMG from "../../public/assets/imgs/trail-tracker_screen-shot-
 import BDPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot-1.jpg";
 import AlpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
 import TietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
+import RojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
 import BeerQuestIMG from "../../public/assets/imgs/BEER-QUEST_SCREENSHOT.jpg";
 import BDArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
 import MobileProjectsSection from "./MobileProjectsSection";
@@ -79,6 +80,14 @@ const ProjectsSection: React.FC = () => {
         />
 
         <ProjectAlt
+          title="Rojo's Mexican Cuisine"
+          description="Rojo's Mexican Cuisine is a business website for a small scale restaurant.  I went with a more whimsical design which featured a vibrant color scheme and lots of images of food.  The site features menu, about, catering and contact pages.  It is fully responsive and is sure to whet any viewer's appetite."
+          link="https://rojosmexicancuisine.vercel.app/"
+          image={RojosIMG}
+          stack={["React", "NextJS"]}
+        />
+
+        <Project
           title="Beer Quest"
           description=" Beer Quest is a React app that allows a user to search for
               breweries in a city. When the user selects a brewery, data is
