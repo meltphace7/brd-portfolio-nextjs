@@ -1,6 +1,4 @@
 import classes from "@/styles/Certs.module.css";
-import ReactDOM from "react-dom";
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 import Image from "next/image";
 import React, { Fragment } from "react";
@@ -11,11 +9,7 @@ import htmlCert from "../../../public/assets/certs/html-css-sass-cert.jpeg";
 import nodeCert from "../../../public/assets/certs/node-cert.jpeg";
 import nextCert from "../../../public/assets/certs/NEXTJS-CERT.jpeg";
 
-interface CertsProps {
-  close: () => void;
-}
-
-const Certs: React.FC<CertsProps> = (props) => {
+const Certs: React.FC = () => {
   return (
     <Fragment>
       <div className={classes.certs}>

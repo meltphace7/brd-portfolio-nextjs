@@ -187,12 +187,11 @@ textarea {
 .section-title {
   font-size: 5vw;
   margin-bottom: 5rem;
-  /* color: #fff; */
-
   color: transparent;
   background-image: linear-gradient(to right, #fff, var(--color-primary));
   background-clip: text;
   -webkit-background-clip: text;
+  text-shadow: var(--text-shadow);
 }
 
 @media (max-width: 50em) {

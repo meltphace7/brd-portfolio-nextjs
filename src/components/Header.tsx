@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Header.module.css";
-import { useInView } from "react-intersection-observer";
 
 const Header: React.FC = () => {
   // Parallax effect for Header
@@ -25,22 +24,6 @@ const Header: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [aboutCrossed]);
-
-  ///////////////////
-  const [sectionOneRevealed, setSectionOneRevealed] = useState(false);
-
-  // Intersection Observer pop-up / fade animation
-  const options = { root: null, threshold: 0.2 };
-
-  const { ref: featureOneRef, inView: featOneIsVisible } = useInView(options);
-
-  useEffect(() => {
-    if (featOneIsVisible) {
-      setSectionOneRevealed(true);
-    }
-  }, [featOneIsVisible]);
-
-  //////////////
 
   const titleClasses = aboutCrossed
     ? `${classes["title-container"]} ${classes["fade-out"]}`

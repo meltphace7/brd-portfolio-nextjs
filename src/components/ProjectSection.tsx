@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from "react";
+import React from "react";
 import classes from "./ProjectSection.module.css";
 import TrailTrackerIMG from "../../public/assets/imgs/trail-tracker_screen-shot-1.jpg";
 import BDPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot-1.jpg";
@@ -65,7 +65,7 @@ const ProjectsSection: React.FC = () => {
                 logo."
           link="https://tieton-construction-nextjs.vercel.app/"
           image={TietonIMG}
-          stack={["React", "NextJS"]}
+          stack={["NextJS", "React"]}
         />
         <Project
           title="Brock Dallman Art"
@@ -83,7 +83,7 @@ const ProjectsSection: React.FC = () => {
           description="Rojo's Mexican Cuisine is a business website for a small scale restaurant.  I went with a more whimsical design which featured a vibrant color scheme and lots of images of food.  The site features menu, about, catering and contact pages.  It is fully responsive and is sure to whet any viewer's appetite."
           link="https://rojosmexicancuisine.vercel.app/"
           image={RojosIMG}
-          stack={["React", "NextJS"]}
+          stack={["NextJS", "React"]}
         />
 
         <Project

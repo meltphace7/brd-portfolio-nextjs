@@ -12,7 +12,6 @@ interface ProjectsProps {
 }
 
 const ProjectAlt: React.FC<ProjectsProps> = (props) => {
-  ///////////////////
   const [projectRevealed, setProjectRevealed] = useState(false);
 
   // Intersection Observer pop-up / fade animation
@@ -26,7 +25,6 @@ const ProjectAlt: React.FC<ProjectsProps> = (props) => {
     }
   }, [projectIsVisible]);
 
-  //////////////
   return (
     <section
       ref={projectRef}

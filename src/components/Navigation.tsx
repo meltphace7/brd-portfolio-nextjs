@@ -9,7 +9,6 @@ const Navigation: React.FC = () => {
   const scrollDirection = useScrollDirection();
 
   const [offsetY, setOffsetY] = useState(0);
-  const [aboutCrossed, setAboutCrossed] = useState(false);
   const handleScroll = () => {
     setOffsetY(window.pageYOffset);
   };

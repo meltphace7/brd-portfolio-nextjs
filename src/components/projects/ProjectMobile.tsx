@@ -1,9 +1,9 @@
-import React, {useState, useEffect } from "react";
-import Image from "next/image";
-import classes from "./Project.module.css";
+import React, {useState, useEffect } from 'react';
+import Image from 'next/image';
+import classes from './ProjectMobile.module.css';
 import { useInView } from "react-intersection-observer";
 
-interface ProjectsProps {
+interface ProjectMobileProps {
   title: string;
   description: string;
   stack: string[];
@@ -11,14 +11,13 @@ interface ProjectsProps {
   link: string;
 }
 
-const Project: React.FC<ProjectsProps> = (props) => {
+const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
   const [projectRevealed, setProjectRevealed] = useState(false);
 
   // Intersection Observer pop-up / fade animation
   const options = { root: null, threshold: 0.2 };
 
-  const { ref: projectRef, inView: projectIsVisible } =
-    useInView(options);
+  const { ref: projectRef, inView: projectIsVisible } = useInView(options);
 
   useEffect(() => {
     if (projectIsVisible) {
@@ -32,7 +31,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
       className={
         projectRevealed
           ? `${classes.project}`
-          : `${classes.project} ${classes['hidden']}`
+          : `${classes.project} ${classes["hidden"]}`
       }
     >
       <a
@@ -43,36 +42,34 @@ const Project: React.FC<ProjectsProps> = (props) => {
       >
         {" "}
       </a>
-      <div className={classes["project-img_container"]}>
-        <Image
-          className={classes["project-img"]}
-          src={props.image}
-          alt="trail tracker website screenshot"
-        />
+      <div className={classes["project-header"]}>
+        <h3>Featured Project</h3>
+        <a
+          className={classes["project-title"]}
+          href={props.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {props.title}
+        </a>
       </div>
+      <Image
+        className={classes["project-img"]}
+        src={props.image}
+        alt={props.title}
+      />
       <div className={classes["project-text"]}>
-        <div className={`${classes["project-header"]} ${classes["tt-header"]}`}>
-          <h3>Featured Project</h3>
-          <a
-            className={classes["project-title"]}
-            href={props.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {props.title}
-          </a>
-        </div>
         <div className={classes["project-description"]}>
           <p>{props.description}</p>
         </div>
         <ul className={classes["project-technologies"]}>
-          {props.stack.map((s: string, i: number) => {
-            return <li key={i}>{s}</li>;
+          {props.stack.map((text: string, index: number) => {
+            return <li key={index}>{text}</li>;
           })}
         </ul>
       </div>
     </section>
   );
-};
+}
 
-export default Project;
+export default ProjectMobile;
