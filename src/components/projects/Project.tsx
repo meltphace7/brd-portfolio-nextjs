@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import Image from "next/image";
 import classes from "./Project.module.css";
+import { useInView } from "react-intersection-observer";
 
 interface ProjectsProps {
   title: string;
@@ -11,8 +12,31 @@ interface ProjectsProps {
 }
 
 const Project: React.FC<ProjectsProps> = (props) => {
+  ///////////////////
+  const [projectRevealed, setProjectRevealed] = useState(false);
+
+  // Intersection Observer pop-up / fade animation
+  const options = { root: null, threshold: 0.2 };
+
+  const { ref: projectRef, inView: projectIsVisible } =
+    useInView(options);
+
+  useEffect(() => {
+    if (projectIsVisible) {
+      setProjectRevealed(true);
+    }
+  }, [projectIsVisible]);
+
+  //////////////
   return (
-    <div className={classes["project"]}>
+    <section
+      ref={projectRef}
+      className={
+        projectRevealed
+          ? `${classes.project}`
+          : `${classes.project} ${classes['hidden']}`
+      }
+    >
       <a
         className={classes["project-link"]}
         href={props.link}
@@ -49,7 +73,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

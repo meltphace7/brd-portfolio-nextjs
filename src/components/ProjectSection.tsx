@@ -1,6 +1,5 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import classes from "./ProjectSection.module.css";
-import Image from "next/image";
 import TrailTrackerIMG from "../../public/assets/imgs/trail-tracker_screen-shot-1.jpg";
 import BDPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot-1.jpg";
 import AlpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
@@ -9,11 +8,11 @@ import RojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
 import BeerQuestIMG from "../../public/assets/imgs/BEER-QUEST_SCREENSHOT.jpg";
 import BDArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
 import MobileProjectsSection from "./MobileProjectsSection";
-
 import Project from "./projects/Project";
 import ProjectAlt from "./projects/ProjectAlt";
 
 const ProjectsSection: React.FC = () => {
+
   return (
     <section id="projects" className={classes["projects-section"]}>
       <h1 className="section-title">Projects</h1>

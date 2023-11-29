@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15rem;
+  transition: all 600ms ease-in-out;
 }
 
 .project-link {
@@ -126,6 +127,16 @@
 .project-technologies li {
   font-size: 1.6rem;
   color: var(--color-primary);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(5rem);
+}
+
+.hidden-alt {
+  opacity: 0;
+  transform: translateX(-5rem);
 }
 
 @media (max-width: 48em) {
