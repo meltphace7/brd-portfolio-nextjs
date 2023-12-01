@@ -18,7 +18,11 @@
   position: absolute;
   z-index: 5;
   width: 95%;
-  height: 50%;
+  height: 70rem;
+
+  
+
+  
 }
 
 .project-link:hover ~ .project-img {
