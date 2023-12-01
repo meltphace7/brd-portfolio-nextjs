@@ -2,10 +2,11 @@
   width: 100%;
   height: 15rem;
   color: white;
-  background-color: var(--color-bg-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  transition: all 400ms ease-in-out;
 }
 
 .logo-container {
@@ -18,6 +19,11 @@
   height: 6rem;
   width: auto;
   margin-right: 0.5rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(5rem);
 }
 
 @media (max-width: 40em) {

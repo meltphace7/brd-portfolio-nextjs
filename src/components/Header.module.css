@@ -6,6 +6,9 @@
   background-position: 50% 50%;
   position: relative;
   z-index: -1;
+  box-shadow: 2px 5px 64px 6px rgba(0,0,0,0.7);
+-webkit-box-shadow: 2px 5px 64px 6px rgba(0,0,0,0.7);
+-moz-box-shadow: 2px 5px 64px 6px rgba(0,0,0,0.7);
 }
 
 .header-overlay {
@@ -14,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: bgFade 4000ms ease-in forwards;
+  animation: bgFade 3000ms ease-in forwards;
 }
 
 @keyframes bgFade {
@@ -51,9 +54,7 @@
   font-weight: 300;
   color: white;
   animation: fadeIn 1000ms ease-in forwards;
-
-
-      color: transparent;
+  color: transparent;
   background-image: linear-gradient(to right, #fff, var(--color-primary));
   background-clip: text;
   -webkit-background-clip: text;

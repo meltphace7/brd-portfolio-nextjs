@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./Footer.module.css";
-import Image from 'next/image'
+import Image from "next/image";
 import logo from "../../public/assets/imgs/BDLOGO-white.png";
 
 const Footer: React.FC = () => {

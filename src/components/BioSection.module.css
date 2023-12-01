@@ -1,7 +1,7 @@
 .bio-section {
   width: 100%;
   min-height: 80rem;
-  background-color: var(--color-bg-1);
+  /* background-color: var(--color-bg-1); */
   display: flex;
   flex-direction: column;
   align-items: center;

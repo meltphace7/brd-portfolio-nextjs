@@ -32,6 +32,7 @@ export default function Home() {
         <ProjectSection />
         <ContactSection />
         <Footer />
+        <div className={classes.background}></div>
       </main>
     </>
   );
