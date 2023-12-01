@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             className={titleClasses}
           >
             <h1>{`<BROCK DALLMAN />`}</h1>
-            <h2>Full Stack Web Developer</h2>
+            <h2>Web Developer</h2>
           </div>
         </div>
       </header>
