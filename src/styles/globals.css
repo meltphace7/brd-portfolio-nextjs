@@ -132,6 +132,7 @@ body {
   font-weight: 200;
   letter-spacing: 0.05rem;
   background-color: var(--main-color-bg-1);
+
 }
 
 @media (max-width: 40em) {
