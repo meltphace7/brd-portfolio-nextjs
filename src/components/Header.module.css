@@ -58,6 +58,7 @@
   background-image: linear-gradient(to right, #fff, var(--color-primary));
   background-clip: text;
   -webkit-background-clip: text;
+
 }
 
 @keyframes fadeIn {
@@ -76,6 +77,7 @@
   background-color: black;
   padding: 1rem;
   animation: h2FadeIn 2000ms ease-in;
+  transform: skew(-25deg);
 }
 
 @keyframes h2FadeIn {
