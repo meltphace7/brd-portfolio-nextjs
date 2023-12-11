@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./MobileProjectsSection.module.css";
 import trailTrackerIMG from "../../public/assets/imgs/trail-tracker_screen-shot-1.jpg";
 import bdPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot-1.jpg";
+import aetherIMG from "../../public/assets/imgs/AETHER_SCREENSHOT.jpg";
 import alpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
 import beerQuestIMG from "../../public/assets/imgs/beer-quest_screen-shot-1.jpg";
 import tietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
@@ -35,6 +36,14 @@ const MobileProjectsSection: React.FC = () => {
         stack={["NextJS", "React", "MongoDB", "AWS"]}
         image={bdPhotographyIMG}
         link="https://brockdallmanphotography.com/"
+      />
+
+      <ProjectMobile
+        title="Aether Design"
+        description="Aether Design is a website for a web design/development company.  I gave it a very dark futuristic style.  The landing page was designed to be very bold and sleek and is filled with javascript effects.  The goal with Aether was to push my design skills to the limits and provide a memorable user experience."
+        stack={["NextJS", "React"]}
+        image={aetherIMG}
+        link="https://aether-meltphace7.vercel.app/"
       />
 
       <ProjectMobile
