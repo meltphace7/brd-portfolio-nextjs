@@ -57,6 +57,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
         className={classes["project-img"]}
         src={props.image}
         alt={props.title}
+        unoptimized
       />
       <div className={classes["project-text"]}>
         <div className={classes["project-description"]}>
