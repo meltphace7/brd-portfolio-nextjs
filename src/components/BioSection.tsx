@@ -50,7 +50,7 @@ const BioSection: React.FC = () => {
           </p>
         </div>
         <div className={classes["bio-img__container"]}>
-          <Image src={BioPic} alt="Brock Dallman" />
+          <Image src={BioPic} alt="Brock Dallman" unoptimized />
         </div>
       </div>
     </section>

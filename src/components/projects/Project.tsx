@@ -48,6 +48,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
           className={classes["project-img"]}
           src={props.image}
           alt="trail tracker website screenshot"
+          unoptimized
         />
       </div>
       <div className={classes["project-text"]}>
