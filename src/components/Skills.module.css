@@ -91,6 +91,7 @@
 .link {
   color: var(--color-primary);
   transition: color 200ms ease-in;
+  text-decoration: underline;
 }
 
 .link:hover {

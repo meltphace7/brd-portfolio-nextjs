@@ -37,6 +37,7 @@ const Navigation: React.FC = () => {
             smooth={true}
             offset={0}
             duration={500}
+            aria-label="To Home Section"
           >
             Home
           </Link>
@@ -49,6 +50,7 @@ const Navigation: React.FC = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            aria-label="To About Section"
           >
             About
           </Link>
@@ -61,6 +63,7 @@ const Navigation: React.FC = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            aria-label="To Expertise Section"
           >
             Expertise
           </Link>
@@ -73,6 +76,7 @@ const Navigation: React.FC = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            aria-label="To Projects Section"
           >
             Projects
           </Link>
@@ -85,6 +89,7 @@ const Navigation: React.FC = () => {
             smooth={true}
             offset={-75}
             duration={500}
+            aria-label="To Contact Section"
           >
             Contact
           </Link>

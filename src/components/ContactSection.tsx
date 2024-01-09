@@ -26,10 +26,10 @@ const ContactSection: React.FC = () => {
 
       <h2 className={classes['email']}>brock.dallman@gmail.com</h2>
 
-      <form onSubmit={handleSubmit} className={classes.form} id="contact-form">
+      <form onSubmit={handleSubmit} className={classes.form} id="contact-form" aria-label="Contact form">
         <div className={classes.form__row}>
           <div className={classes.form__group__top}>
-            <label htmlFor="firstName">Your Name</label>
+            <label htmlFor="name">Your Name</label>
             <input
               className={classes["form__input--first-name"]}
               type="text"
@@ -69,7 +69,7 @@ const ContactSection: React.FC = () => {
             required
           />
         </div>
-        <button type="submit" disabled={state.submitting}>
+        <button type="submit" disabled={state.submitting} aria-label="Submit Form Button">
           Submit
         </button>
       </form>

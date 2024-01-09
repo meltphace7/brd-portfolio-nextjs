@@ -51,6 +51,7 @@
 .bio-link {
   color: var(--color-primary);
   transition: color 150ms ease-in;
+  text-decoration: underline;
 }
 
 .bio-link:hover {

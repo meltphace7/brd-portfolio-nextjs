@@ -62,7 +62,11 @@ const Skills: React.FC = () => {
           </p>
           <p>
             My certifications can be found{" "}
-            <Link className={classes.link} href="/certs">
+            <Link
+              className={classes.link}
+              href="/certs"
+              aria-label="See Brock Dallman's Web Development Certifications"
+            >
               here
             </Link>{" "}
             and you can find my project repos on{" "}
@@ -70,6 +74,7 @@ const Skills: React.FC = () => {
               className={classes.link}
               href="https://github.com/meltphace7"
               target="_blank"
+              aria-label="Link to https://github.com/meltphace7"
             >
               Github
             </a>

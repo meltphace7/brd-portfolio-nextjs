@@ -39,6 +39,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
         href={props.link}
         target="_blank"
         rel="noreferrer"
+        aria-label={`Link to ${props.link}`}
       >
         {" "}
       </a>
@@ -49,6 +50,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
           href={props.link}
           target="_blank"
           rel="noreferrer"
+          aria-label={`Link to ${props.link}`}
         >
           {props.title}
         </a>
@@ -56,7 +58,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
       <Image
         className={classes["project-img"]}
         src={props.image}
-        alt={props.title}
+        alt={`Screenshot of Brock Dallman's ${props.title} website`}
         unoptimized
       />
       <div className={classes["project-text"]}>

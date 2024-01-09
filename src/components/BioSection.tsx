@@ -17,6 +17,7 @@ const BioSection: React.FC = () => {
               href="https://brockdallmanphotography.com/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Link to brockdallmanphotography.com"
             >
               photographer
             </a>
@@ -26,6 +27,7 @@ const BioSection: React.FC = () => {
               href="https://brockdallmanart.com/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Link to brockdallmanart.com"
             >
               illustrator
             </a>

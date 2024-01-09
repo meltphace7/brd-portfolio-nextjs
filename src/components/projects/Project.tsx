@@ -32,7 +32,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
       className={
         projectRevealed
           ? `${classes.project}`
-          : `${classes.project} ${classes['hidden']}`
+          : `${classes.project} ${classes["hidden"]}`
       }
     >
       <a
@@ -40,6 +40,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
         href={props.link}
         target="_blank"
         rel="noreferrer"
+        aria-label={`Link to ${props.link}`}
       >
         {" "}
       </a>
@@ -47,7 +48,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
         <Image
           className={classes["project-img"]}
           src={props.image}
-          alt="trail tracker website screenshot"
+          alt={`Screen shot of Brock Dallman's ${props.title} website`}
           unoptimized
         />
       </div>
@@ -59,6 +60,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
             href={props.link}
             target="_blank"
             rel="noreferrer"
+            aria-label={`Link to ${props.link}`}
           >
             {props.title}
           </a>
