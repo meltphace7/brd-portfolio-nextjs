@@ -22,6 +22,7 @@ export default function Home() {
           content="Brock Dallman's official web development portfolio site"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#76e8fc" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${classes.main} ${inter.className}`}>

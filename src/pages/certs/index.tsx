@@ -14,12 +14,15 @@ const Certs: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>Certifications | Brock Dallman Web Developer Official Site</title>
+        <title>
+          Certifications | Brock Dallman Web Developer Official Site
+        </title>
         <meta
           name="description"
           content="Brock Dallman's web development certifications"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#76e8fc" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={classes.certs}>
