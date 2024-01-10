@@ -13,7 +13,6 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Brock Dallman's official web development portfolio site"
         />
-        <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />

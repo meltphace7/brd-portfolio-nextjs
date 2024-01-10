@@ -61,23 +61,24 @@ const Skills: React.FC = () => {
             unique business challenges!
           </p>
           <p>
-            My certifications can be found{" "}
+            Click on the following link for my{" "}
             <Link
               className={classes.link}
               href="/certs"
               aria-label="See Brock Dallman's Web Development Certifications"
             >
-              here
+              certifications
             </Link>{" "}
-            and you can find my project repos on{" "}
+            and you can find my project repos on my{" "}
             <a
               className={classes.link}
               href="https://github.com/meltphace7"
               target="_blank"
               aria-label="Link to https://github.com/meltphace7"
             >
-              Github
+              Github page
             </a>
+            .
           </p>
         </div>
         <div className={classes["skills-display-container"]}>
