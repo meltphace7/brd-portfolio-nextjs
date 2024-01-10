@@ -1,4 +1,5 @@
 import classes from "@/styles/Certs.module.css";
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import React, { Fragment } from "react";
@@ -12,6 +13,15 @@ import nextCert from "../../../public/assets/certs/NEXTJS-CERT.jpeg";
 const Certs: React.FC = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Certifications | Brock Dallman Web Developer Official Site</title>
+        <meta
+          name="description"
+          content="Brock Dallman's web development certifications"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={classes.certs}>
         <div className={classes["certs-container"]}></div>
         <h1>Certifications</h1>
@@ -45,7 +55,7 @@ const Certs: React.FC = () => {
           src={nextCert}
           alt="NextJs certification"
         />
-        <Link className={classes.link} href="/">
+        <Link className={classes.link} href="/" aria-label="Back to Home Page">
           Return to Main Page
         </Link>
       </div>

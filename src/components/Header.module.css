@@ -74,7 +74,7 @@
 .title-container h2 {
   font-size: 3vw;
   color: var(--color-primary);
-  background-color: black;
+  background-color: #000000;
   padding: 1rem;
   animation: h2FadeIn 2000ms ease-in;
   transform: skew(-25deg);

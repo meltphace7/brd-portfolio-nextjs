@@ -44,7 +44,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
         {" "}
       </a>
       <div className={classes["project-header"]}>
-        <h3>Featured Project</h3>
+        <h2>Featured Project</h2>
         <a
           className={classes["project-title"]}
           href={props.link}

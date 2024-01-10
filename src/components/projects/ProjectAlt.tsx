@@ -38,16 +38,18 @@ const ProjectAlt: React.FC<ProjectsProps> = (props) => {
         <div
           className={`${classes["project-header-alt"]} ${classes["bdp-header"]}`}
         >
-          <h3>Featured Project</h3>
-          <a
-            className={classes["project-title"]}
-            href={props.link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Link to ${props.link}`}
-          >
-            {props.title}
-          </a>
+          <h2>Featured Project</h2>
+          <h1>
+            <a
+              className={classes["project-title"]}
+              href={props.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Link to ${props.link}`}
+            >
+              {props.title}
+            </a>
+          </h1>
         </div>
         <div className={classes["project-description-alt"]}>
           <p>{props.description}</p>

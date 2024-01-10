@@ -54,16 +54,18 @@ const Project: React.FC<ProjectsProps> = (props) => {
       </div>
       <div className={classes["project-text"]}>
         <div className={`${classes["project-header"]} ${classes["tt-header"]}`}>
-          <h3>Featured Project</h3>
-          <a
-            className={classes["project-title"]}
-            href={props.link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Link to ${props.link}`}
-          >
-            {props.title}
-          </a>
+          <h2>Featured Project</h2>
+          <h1>
+            <a
+              className={classes["project-title"]}
+              href={props.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Link to ${props.link}`}
+            >
+              {props.title}
+            </a>
+          </h1>
         </div>
         <div className={classes["project-description"]}>
           <p>{props.description}</p>

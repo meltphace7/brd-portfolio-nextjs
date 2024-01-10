@@ -82,7 +82,7 @@ const Skills: React.FC = () => {
         </div>
         <div className={classes["skills-display-container"]}>
           <div className={classes["skills-display-frontend"]}>
-            <h3>Frontend</h3>
+            <h2>Frontend</h2>
             <div className={classes["skills-display-frontend-container"]}>
               <div className={classes["skills-col"]}>
                 <div className={classes["skill"]}>
@@ -123,7 +123,7 @@ const Skills: React.FC = () => {
             </div>
           </div>
           <div className={classes["skills-display-backend"]}>
-            <h3>Backend</h3>
+            <h2>Backend</h2>
             <div className={classes["skills-display-backend-container"]}>
               <div className={classes["skills-col"]}>
                 <div className={classes["skill"]}>
