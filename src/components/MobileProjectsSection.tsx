@@ -3,6 +3,7 @@ import classes from "./MobileProjectsSection.module.css";
 import trailTrackerIMG from "../../public/assets/imgs/trail-tracker_screen-shot-1.jpg";
 import bdPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot-1.jpg";
 import aetherIMG from "../../public/assets/imgs/AETHER_SCREENSHOT.jpg";
+import SummitviewIMG from '../../public/assets/imgs/SUMMITVIEW-REALTY_SCREENSHOT.jpg'
 import alpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
 import beerQuestIMG from "../../public/assets/imgs/beer-quest_screen-shot-1.jpg";
 import tietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
@@ -44,6 +45,14 @@ const MobileProjectsSection: React.FC = () => {
         stack={["NextJS", "React"]}
         image={aetherIMG}
         link="https://aether-meltphace7.vercel.app/"
+      />
+
+      <ProjectMobile
+        title="Summitview Realty"
+        description="Summitview Realty is a custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information. The site is fully responsive, features an elegant modern design and svg assets I created with Inkscape."
+        stack={["Wordpress", "PHP", "Javascript", "SASS"]}
+        image={SummitviewIMG}
+        link="https://summitview-realty.com/"
       />
 
       <ProjectMobile

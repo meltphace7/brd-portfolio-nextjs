@@ -8,6 +8,7 @@ import TietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
 import RojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
 import BeerQuestIMG from "../../public/assets/imgs/BEER-QUEST_SCREENSHOT.jpg";
 import BDArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
+import SummitviewIMG from '../../public/assets/imgs/SUMMITVIEW-REALTY_SCREENSHOT.jpg'
 import MobileProjectsSection from "./MobileProjectsSection";
 import Project from "./projects/Project";
 import ProjectAlt from "./projects/ProjectAlt";
@@ -51,6 +52,13 @@ const ProjectsSection: React.FC = () => {
           stack={["NextJS", "React"]}
         />
         <ProjectAlt
+          title="Summitview Realty"
+          description="Summitview Realty is a custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information. The site is fully responsive, features an elegant modern design and svg assets I created with Inkscape."
+          link="https://summitview-realty.com/"
+          image={SummitviewIMG}
+          stack={["Wordpress", "Sass", "PHP", "Javascript"]}
+        />
+        <Project
           title="Alpine Prints"
           description="Alpine Prints is a website for a print company. I designed
                 it to be easily configurable to fit the needs of a small
@@ -63,7 +71,7 @@ const ProjectsSection: React.FC = () => {
           stack={["React", "NodeJS", "Express", "MongoDB", "AWS"]}
         />
 
-        <Project
+        <ProjectAlt
           title="Tieton Construction"
           description="Tieton Constuction is a business website made with NextJS. This
                 website is totally responsive and features the standard pages
@@ -75,7 +83,7 @@ const ProjectsSection: React.FC = () => {
           image={TietonIMG}
           stack={["NextJS", "React"]}
         />
-        <ProjectAlt
+        <Project
           title="Brock Dallman Art"
           description="Brock Dallman Art is my fully responsive personal art website.
                 Created with NextJS, brockdallmanart.com utilizes NextJS
@@ -86,7 +94,7 @@ const ProjectsSection: React.FC = () => {
           stack={["NextJS", "React", "MongoDB", "AWS"]}
         />
 
-        <Project
+        <ProjectAlt
           title="Rojo's Mexican Cuisine"
           description="Rojo's Mexican Cuisine is a business website for a small scale restaurant.  I went with a more whimsical design which featured a vibrant color scheme and lots of images of food.  The site features menu, about, catering and contact pages.  It is fully responsive and is sure to whet any user's appetite."
           link="https://rojosmexicancuisine.vercel.app/"
@@ -94,7 +102,7 @@ const ProjectsSection: React.FC = () => {
           stack={["NextJS", "React"]}
         />
 
-        <ProjectAlt
+        <Project
           title="Beer Quest"
           description=" Beer Quest is a React app that allows a user to search for
               breweries in a city. When the user selects a brewery, data is
