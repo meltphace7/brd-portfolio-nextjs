@@ -9,9 +9,11 @@ import RojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
 import BeerQuestIMG from "../../public/assets/imgs/BEER-QUEST_SCREENSHOT.jpg";
 import BDArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
 import SummitviewIMG from '../../public/assets/imgs/SUMMITVIEW-REALTY_SCREENSHOT.jpg'
+import OlympicCrestIMG from "../../public/assets/imgs/olympic-crest-marine-screenshot.jpg";
 import MobileProjectsSection from "./MobileProjectsSection";
 import Project from "./projects/Project";
 import ProjectAlt from "./projects/ProjectAlt";
+
 
 const ProjectsSection: React.FC = () => {
 
@@ -53,22 +55,17 @@ const ProjectsSection: React.FC = () => {
         />
         <ProjectAlt
           title="Summitview Realty"
-          description="Summitview Realty is a custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information. The site is fully responsive, features an elegant modern design and svg assets I created with Inkscape."
+          description="Summitview Realty is a fully responsive, custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
           link="https://summitview-realty.com/"
           image={SummitviewIMG}
-          stack={["Wordpress", "Sass", "PHP", "Javascript"]}
+          stack={["Wordpress", "PHP", "Javascript", "SASS"]}
         />
         <Project
-          title="Alpine Prints"
-          description="Alpine Prints is a website for a print company. I designed
-                it to be easily configurable to fit the needs of a small
-                business. It features on online shop, user signup, login,
-                accounts, authentication and administrator privileges. A
-                business owner can sign in as admin and add, edit and delete
-                products, and manage orders."
-          link="https://alpineprints.vercel.app/home"
-          image={AlpinePrintsIMG}
-          stack={["React", "NodeJS", "Express", "MongoDB", "AWS"]}
+          title="Olympic Crest Marine"
+          description="Olympic Crest Marine is a fully responsive, custom Wordpress theme I developed for a boat dealership.  Leveraging the power of custom post types and Advanced Custom Fields, it allows the site admin to manage their boat inventory from the Wordpress Admin dashboard.  There they can add images, information and specs for each boat.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
+          link="#"
+          image={OlympicCrestIMG}
+          stack={["Wordpress", "PHP", "Javascript", "SASS"]}
         />
 
         <ProjectAlt
@@ -101,8 +98,20 @@ const ProjectsSection: React.FC = () => {
           image={RojosIMG}
           stack={["NextJS", "React"]}
         />
-
         <Project
+          title="Alpine Prints"
+          description="Alpine Prints is a website for a print company. I designed
+                it to be easily configurable to fit the needs of a small
+                business. It features on online shop, user signup, login,
+                accounts, authentication and administrator privileges. A
+                business owner can sign in as admin and add, edit and delete
+                products, and manage orders."
+          link="https://alpineprints.vercel.app/home"
+          image={AlpinePrintsIMG}
+          stack={["React", "NodeJS", "Express", "MongoDB", "AWS"]}
+        />
+
+        {/* <Project
           title="Beer Quest"
           description=" Beer Quest is a React app that allows a user to search for
               breweries in a city. When the user selects a brewery, data is
@@ -114,7 +123,7 @@ const ProjectsSection: React.FC = () => {
           link="https://beer-quest.vercel.app/"
           image={BeerQuestIMG}
           stack={["React"]}
-        />
+        /> */}
       </div>
       <MobileProjectsSection />
     </section>
