@@ -6,10 +6,10 @@ import AetherIMG from "../../public/assets/imgs/AETHER_SCREENSHOT.jpg";
 import AlpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
 import TietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
 import RojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
-import BeerQuestIMG from "../../public/assets/imgs/BEER-QUEST_SCREENSHOT.jpg";
 import BDArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
 import SummitviewIMG from '../../public/assets/imgs/SUMMITVIEW-REALTY_SCREENSHOT.jpg'
 import OlympicCrestIMG from "../../public/assets/imgs/olympic-crest-marine-screenshot.jpg";
+import SanaiIMG from "../../public/assets/imgs/sanai-screenshot.jpg";
 import MobileProjectsSection from "./MobileProjectsSection";
 import Project from "./projects/Project";
 import ProjectAlt from "./projects/ProjectAlt";
@@ -46,13 +46,7 @@ const ProjectsSection: React.FC = () => {
           image={BDPhotographyIMG}
           stack={["NextJS", "React", "MongoDB", "AWS"]}
         />
-        <Project
-          title="Aether"
-          description="Aether is a website for a web design/development company.  I went with a dark futuristic style.  The landing page features many animations and is designed to be bold and provocative as to capture the user's attention.  The goal with Aether was to push my design skills to the limits and provide a memorable user experience."
-          link="https://aether-meltphace7.vercel.app/"
-          image={AetherIMG}
-          stack={["NextJS", "React"]}
-        />
+
         <ProjectAlt
           title="Summitview Realty"
           description="Summitview Realty is a fully responsive, custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
@@ -66,6 +60,20 @@ const ProjectsSection: React.FC = () => {
           link="#"
           image={OlympicCrestIMG}
           stack={["Wordpress", "PHP", "Javascript", "SASS"]}
+        />
+        <ProjectAlt
+          title="Sanai"
+          description="Sanai is a fully responsive website I created for an AI startup.  It was created with Divi, a no code theme builder, which gives the client more control over their website.  The site features a clean, user friendly design and a contact form."
+          link="https://sanai.ai/"
+          image={SanaiIMG}
+          stack={["Wordpress", "Divi"]}
+        />
+        <Project
+          title="Aether"
+          description="Aether is a website for a web design/development company.  I went with a dark futuristic style.  The landing page features many animations and is designed to be bold and provocative as to capture the user's attention.  The goal with Aether was to push my design skills to the limits and provide a memorable user experience."
+          link="https://aether-meltphace7.vercel.app/"
+          image={AetherIMG}
+          stack={["NextJS", "React"]}
         />
 
         <ProjectAlt
@@ -93,7 +101,7 @@ const ProjectsSection: React.FC = () => {
 
         <ProjectAlt
           title="Rojo's Mexican Cuisine"
-          description="Rojo's Mexican Cuisine is a business website for a small scale restaurant.  I went with a more whimsical design which featured a vibrant color scheme and lots of images of food.  The site features menu, about, catering and contact pages.  It is fully responsive and is sure to whet any user's appetite."
+          description="Rojo's Mexican Cuisine is a business website for a small scale restaurant.  I went with a more whimsical design which featured a vibrant color scheme and lots of mouth watering images of food.  The site features menu, about, catering and contact pages.  It is fully responsive and is sure to whet any user's appetite."
           link="https://rojosmexicancuisine.vercel.app/"
           image={RojosIMG}
           stack={["NextJS", "React"]}

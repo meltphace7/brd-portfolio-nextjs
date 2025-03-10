@@ -11,6 +11,8 @@ import { SiSass } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
+import { FaPhp } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
 import Icon from "../../public/assets/imgs/mongoose.js";
 
 const Skills: React.FC = () => {
@@ -30,14 +32,13 @@ const Skills: React.FC = () => {
           </p>
 
           <p>
-            I specialize in the React frontend framework, the MERN
-            stack(MongoDB, Express, React, NodeJS) and NextJS. NextJS, which
-            builds and expands upon the core features of React, has become my
-            framework of choice. It&apos;s core features like server side
-            rendering, file based routing, built in API and improved SEO, result
-            in an improved experience for both the client and the developer. I
-            have experience migrating several React projects to the NextJS
-            framework.
+            I specialize in the React frontend framework, NextJS and custom
+            Wordpress theme development. NextJS, which builds and expands upon
+            the core features of React, has become my framework of choice.
+            It&apos;s core features like server side rendering, file based
+            routing, built in API and improved SEO, result in an improved
+            experience for both the client and the developer. I have experience
+            migrating several React projects to the NextJS framework.
           </p>
 
           <p>
@@ -56,7 +57,7 @@ const Skills: React.FC = () => {
           <p>
             As a web developer I thouroughly enjoy solving problems, learning
             perpetually and staying abreast of the lastest trends and
-            technologies in the industry. I would love the oppurtunity to
+            technologies in the industry. I would love the opportunity to
             leverage my expertise and provide innovative solutions to your
             unique business challenges!
           </p>
@@ -82,7 +83,69 @@ const Skills: React.FC = () => {
           </p>
         </div>
         <div className={classes["skills-display-container"]}>
-          <div className={classes["skills-display-frontend"]}>
+          <h3>TECHNOLOGIES</h3>
+
+          <ul className={classes["skills-grid"]}>
+            <li className={classes["skill"]}>
+              <SiJavascript className={classes["icon"]} size={20} />
+              <p>Javascript</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiTypescript className={classes["icon"]} size={20} />
+              <p>Typescript</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiReact className={classes["icon"]} size={20} />
+              <p>React</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiNextdotjs className={classes["icon"]} size={20} />
+              <p>NextJS</p>
+            </li>
+
+            <li className={classes["skill"]}>
+              <SiHtml5 className={classes["icon"]} size={20} />
+              <p>HTML</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiCss3 className={classes["icon"]} size={20} />
+              <p>CSS</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiSass className={classes["icon"]} size={20} />
+              <p>SASS</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiRedux className={classes["icon"]} size={20} />
+              <p>Redux</p>
+            </li>
+            <li className={classes["skill"]}>
+              <FaNodeJs className={classes["icon"]} size={20} />
+              <p>NodeJs</p>
+            </li>
+            <li className={classes["skill"]}>
+              <FaNodeJs className={classes["icon"]} size={20} />
+              <p>Express</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiMongodb className={classes["icon"]} size={20} />
+              <p>MongoDB</p>
+            </li>
+            <li className={classes["skill"]}>
+              <Icon />
+              <p>Mongoose</p>
+            </li>
+            <li className={classes["skill"]}>
+              <FaPhp className={classes["icon"]} size={20} />
+              <p>PHP</p>
+            </li>
+            <li className={classes["skill"]}>
+              <FaWordpress className={classes["icon"]} size={20} />
+              <p>Wordpress</p>
+            </li>
+          </ul>
+
+          {/* <div className={classes["skills-display-frontend"]}>
             <h2>Frontend</h2>
             <div className={classes["skills-display-frontend-container"]}>
               <div className={classes["skills-col"]}>
@@ -143,9 +206,17 @@ const Skills: React.FC = () => {
                   <Icon />
                   <p>Mongoose</p>
                 </div>
+                <div className={classes["skill"]}>
+                  <FaPhp className={classes["icon"]} size={20} />
+                  <p>PHP</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <FaWordpress className={classes["icon"]} size={20} />
+                  <p>Wordpress</p>
+                </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
