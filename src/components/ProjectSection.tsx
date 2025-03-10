@@ -47,28 +47,28 @@ const ProjectsSection: React.FC = () => {
           stack={["NextJS", "React", "MongoDB", "AWS"]}
         />
 
-        <ProjectAlt
+        <Project
           title="Summitview Realty"
           description="Summitview Realty is a fully responsive, custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
           link="https://summitview-realty.com/"
           image={SummitviewIMG}
           stack={["Wordpress", "PHP", "Javascript", "SASS"]}
         />
-        <Project
+        <ProjectAlt
           title="Olympic Crest Marine"
           description="Olympic Crest Marine is a fully responsive, custom Wordpress theme I developed for a boat dealership.  Leveraging the power of custom post types and Advanced Custom Fields, it allows the site admin to manage their boat inventory from the Wordpress Admin dashboard.  There they can add images, information and specs for each boat.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
           link="#"
           image={OlympicCrestIMG}
           stack={["Wordpress", "PHP", "Javascript", "SASS"]}
         />
-        <ProjectAlt
+        <Project
           title="Sanai"
           description="Sanai is a fully responsive website I created for an AI startup.  It was created with Divi, a no code theme builder, which gives the client more control over their website.  The site features a clean, user friendly design and a contact form."
           link="https://sanai.ai/"
           image={SanaiIMG}
           stack={["Wordpress", "Divi"]}
         />
-        <Project
+        <ProjectAlt
           title="Aether"
           description="Aether is a website for a web design/development company.  I went with a dark futuristic style.  The landing page features many animations and is designed to be bold and provocative as to capture the user's attention.  The goal with Aether was to push my design skills to the limits and provide a memorable user experience."
           link="https://aether-meltphace7.vercel.app/"
@@ -76,7 +76,7 @@ const ProjectsSection: React.FC = () => {
           stack={["NextJS", "React"]}
         />
 
-        <ProjectAlt
+        <Project
           title="Tieton Construction"
           description="Tieton Constuction is a business website made with NextJS. This
                 website is totally responsive and features the standard pages
@@ -88,7 +88,7 @@ const ProjectsSection: React.FC = () => {
           image={TietonIMG}
           stack={["NextJS", "React"]}
         />
-        <Project
+        <ProjectAlt
           title="Brock Dallman Art"
           description="Brock Dallman Art is my fully responsive personal art website.
                 Created with NextJS, brockdallmanart.com utilizes NextJS
@@ -99,14 +99,14 @@ const ProjectsSection: React.FC = () => {
           stack={["NextJS", "React", "MongoDB", "AWS"]}
         />
 
-        <ProjectAlt
+        <Project
           title="Rojo's Mexican Cuisine"
           description="Rojo's Mexican Cuisine is a business website for a small scale restaurant.  I went with a more whimsical design which featured a vibrant color scheme and lots of mouth watering images of food.  The site features menu, about, catering and contact pages.  It is fully responsive and is sure to whet any user's appetite."
           link="https://rojosmexicancuisine.vercel.app/"
           image={RojosIMG}
           stack={["NextJS", "React"]}
         />
-        <Project
+        <ProjectAlt
           title="Alpine Prints"
           description="Alpine Prints is a website for a print company. I designed
                 it to be easily configurable to fit the needs of a small
