@@ -3,12 +3,14 @@ import classes from "./MobileProjectsSection.module.css";
 import trailTrackerIMG from "../../public/assets/imgs/trail-tracker_screen-shot-1.jpg";
 import bdPhotographyIMG from "../../public/assets/imgs/bdphotography_screen-shot-1.jpg";
 import aetherIMG from "../../public/assets/imgs/AETHER_SCREENSHOT.jpg";
-import SummitviewIMG from '../../public/assets/imgs/SUMMITVIEW-REALTY_SCREENSHOT.jpg'
+import SummitviewIMG from "../../public/assets/imgs/SUMMITVIEW-REALTY_SCREENSHOT.jpg";
 import alpinePrintsIMG from "../../public/assets/imgs/alpine-prints_screen-shots-1.jpg";
 import beerQuestIMG from "../../public/assets/imgs/beer-quest_screen-shot-1.jpg";
 import tietonIMG from "../../public/assets/imgs/TIETON_SCREENSHOT.jpg";
 import rojosIMG from "../../public/assets/imgs/rojos-screenshot.jpg";
 import bdArtIMG from "../../public/assets/imgs/BDART_SCREENSHOT.jpg";
+import OlympicCrestIMG from "../../public/assets/imgs/olympic-crest-marine-screenshot.jpg";
+import SanaiIMG from "../../public/assets/imgs/sanai-screenshot.jpg";
 import ProjectMobile from "../components/projects/ProjectMobile";
 
 const MobileProjectsSection: React.FC = () => {
@@ -40,32 +42,33 @@ const MobileProjectsSection: React.FC = () => {
       />
 
       <ProjectMobile
-        title="Aether"
-        description="Aether is a website for a web design/development company.  I went with a dark futuristic style.  The landing page features many animations and is designed to be bold and provocative as to capture the user's attention.  The goal with Aether was to push my design skills to the limits and provide a memorable user experience."
-        stack={["NextJS", "React"]}
-        image={aetherIMG}
-        link="https://aether-meltphace7.vercel.app/"
-      />
-
-      <ProjectMobile
         title="Summitview Realty"
         description="Summitview Realty is a custom Wordpress theme I developed for a real estate company.  It utilizes custom post types and Advanced Custom Fields to give the site admin the ability to manage Realtors and Listings from their Wordpress Admin menu.  Each listing features an image gallery, image slider as well as home information. The site is fully responsive, features an elegant modern design and svg assets I created with Inkscape."
         stack={["Wordpress", "PHP", "Javascript", "SASS"]}
         image={SummitviewIMG}
         link="https://summitview-realty.com/"
       />
+      <ProjectMobile
+        title="Olympic Crest Marine"
+        description="Olympic Crest Marine is a fully responsive, custom Wordpress theme I developed for a boat dealership.  Leveraging the power of custom post types and Advanced Custom Fields, it allows the site admin to manage their boat inventory from the Wordpress Admin dashboard.  There they can add images, information and specs for each boat.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
+        stack={["Wordpress", "PHP", "Javascript", "SASS"]}
+        image={OlympicCrestIMG}
+        link="#"
+      />
+      <ProjectMobile
+        title="Sanai"
+        description="Sanai is a fully responsive website I created for an AI startup.  It was created with Divi, a no code theme builder, which gives the client more control over their website.  The site features a clean, user friendly design and a contact form."
+        stack={["Wordpress", "Divi"]}
+        image={SanaiIMG}
+        link="https://sanai.ai/"
+      />
 
       <ProjectMobile
-        title="Alpine Prints"
-        description="Alpine Prints is a website for a print company. I designed
-                it to be easily configurable to fit the needs of a small
-                business. It features on online shop, user signup, login,
-                accounts, authentication and administrator privileges. A
-                business owner can sign in as admin and add, edit and delete
-                products, and manage orders."
-        stack={["React", "NodeJS", "Express", "MongoDB", "AWS"]}
-        image={alpinePrintsIMG}
-        link="https://alpineprints.vercel.app/home"
+        title="Aether"
+        description="Aether is a website for a web design/development company.  I went with a dark futuristic style.  The landing page features many animations and is designed to be bold and provocative as to capture the user's attention.  The goal with Aether was to push my design skills to the limits and provide a memorable user experience."
+        stack={["NextJS", "React"]}
+        image={aetherIMG}
+        link="https://aether-meltphace7.vercel.app/"
       />
 
       <ProjectMobile
@@ -100,17 +103,16 @@ const MobileProjectsSection: React.FC = () => {
       />
 
       <ProjectMobile
-        title="Beer Quest"
-        description="Beer Quest is a React app that allows a user to search for
-              breweries in a city. When the user selects a brewery, data is
-              displayed like the phone number, address and a link to their
-              website. When users click the address link, they are redirected to
-              google maps with the address to the brewery plugged in. Users can
-              save a brewery by adding it to their favorites which are stored on
-              their browser in local storage."
-        stack={["React"]}
-        image={beerQuestIMG}
-        link="https://beer-quest.vercel.app/"
+        title="Alpine Prints"
+        description="Alpine Prints is a website for a print company. I designed
+                it to be easily configurable to fit the needs of a small
+                business. It features on online shop, user signup, login,
+                accounts, authentication and administrator privileges. A
+                business owner can sign in as admin and add, edit and delete
+                products, and manage orders."
+        stack={["React", "NodeJS", "Express", "MongoDB", "AWS"]}
+        image={alpinePrintsIMG}
+        link="https://alpineprints.vercel.app/home"
       />
     </div>
   );
