@@ -32,26 +32,36 @@ const Skills: React.FC = () => {
           </p>
 
           <p>
-            I specialize in the React frontend framework, NextJS and custom
-            Wordpress theme development. NextJS, which builds and expands upon
-            the core features of React, has become my framework of choice.
-            It&apos;s core features like server side rendering, file based
-            routing, built in API and improved SEO, result in an improved
-            experience for both the client and the developer. I have experience
-            migrating several React projects to the NextJS framework.
+            I specialize in the React and NextJS javascript frameworks as well
+            as custom Wordpress theme development. NextJS, which builds and
+            expands upon the core features of React, has become my javascript
+            framework of choice. It&apos;s core features like server side
+            rendering, file based routing, built in API and improved SEO, result
+            in an improved experience for both the client and the developer. I
+            have experience migrating several React projects to the NextJS
+            framework.
+          </p>
+
+          <p>
+            I also specialize in developing custom WordPress themes, tailored to
+            the unique needs of each business. As the world&apos;s most popular
+            content management system.  Powering approximately 43% of all
+            websites, WordPress offers flexibility, scalability, and ease of use.
+            My custom-built WordPress sites empower administrators to manage
+            business data efficiently while maintaining control over key aspects
+            of their website.
           </p>
 
           <p>
             Aside from my frontend skills I also have experience creating NodeJs
-            REST APIs with the Express framework. With my REST API acting as an
-            intermediary between the frontend and a MongoDB database, I have
+            REST APIs with the Express framework. With REST APIs I have
             implemented features for my websites such as user
-            signup/login/authentication, admin dashboards/privileges, photo/file
-            uploads, CRUD(Create, Remove, Update, Delete) operations and more. I
-            utilize NPM packages like JSON Web Tokens and BCrypt to ensure
-            security and follow best practices. I have also implemented these
-            features with NextJS&apos;s built in API which uses NodeJS under the
-            hood.
+            signup/login/authentication, inventory management, admin
+            dashboards/privileges, photo/file uploads, CRUD(Create, Remove,
+            Update, Delete) operations and more. I utilize NPM packages like
+            JSON Web Tokens and BCrypt to ensure security and follow best
+            practices. I have also implemented these features with NextJS&apos;s
+            built in API which uses NodeJS under the hood.
           </p>
 
           <p>
@@ -144,79 +154,6 @@ const Skills: React.FC = () => {
               <p>Wordpress</p>
             </li>
           </ul>
-
-          {/* <div className={classes["skills-display-frontend"]}>
-            <h2>Frontend</h2>
-            <div className={classes["skills-display-frontend-container"]}>
-              <div className={classes["skills-col"]}>
-                <div className={classes["skill"]}>
-                  <SiJavascript className={classes["icon"]} size={20} />
-                  <p>Javascript</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiTypescript className={classes["icon"]} size={20} />
-                  <p>Typescript</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiReact className={classes["icon"]} size={20} />
-                  <p>React</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiRedux className={classes["icon"]} size={20} />
-                  <p>Redux</p>
-                </div>
-              </div>
-              <div className={classes["skills-col"]}>
-                <div className={classes["skill"]}>
-                  <SiHtml5 className={classes["icon"]} size={20} />
-                  <p>HTML</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiCss3 className={classes["icon"]} size={20} />
-                  <p>CSS</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiSass className={classes["icon"]} size={20} />
-                  <p>SASS</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiNextdotjs className={classes["icon"]} size={20} />
-                  <p>NextJS</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={classes["skills-display-backend"]}>
-            <h2>Backend</h2>
-            <div className={classes["skills-display-backend-container"]}>
-              <div className={classes["skills-col"]}>
-                <div className={classes["skill"]}>
-                  <FaNodeJs className={classes["icon"]} size={20} />
-                  <p>NodeJs</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <FaNodeJs className={classes["icon"]} size={20} />
-                  <p>Express</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <SiMongodb className={classes["icon"]} size={20} />
-                  <p>MongoDB</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <Icon />
-                  <p>Mongoose</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <FaPhp className={classes["icon"]} size={20} />
-                  <p>PHP</p>
-                </div>
-                <div className={classes["skill"]}>
-                  <FaWordpress className={classes["icon"]} size={20} />
-                  <p>Wordpress</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

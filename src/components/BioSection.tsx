@@ -37,13 +37,12 @@ const BioSection: React.FC = () => {
             began to pursue web development as a career path.
           </p>
           <p>
-            I started taking Udemy courses to expand my knowledge and skill set.
-            Since learning Javascript, Node, MongoDB, Express and the React
-            framework, I have been designing and coding a variety of projects,
+            I started taking online courses to expand my knowledge and skill set.
+            Since learning Javascript, Node, MongoDB, Express, React, NextJS and Wordpress theme development, I have been designing and coding a variety of projects,
             always prioritizing a responsive and user friendly design. My
-            projects have included features such as online stores, user signup,
-            login, accounts, authentication(JSON web tokens), admin privileges,
-            CRUD operations, image uploads to AWS S3 buckets and more.
+            projects have included features such as inventory management, user signup,
+            login, accounts, authentication, admin privileges,
+            CRUD operations, email contact forms, online shops, image uploads to AWS S3 buckets and more.
           </p>
           <p>
             I look forward to collaborating with you to create awesome,

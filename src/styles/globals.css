@@ -1,10 +1,15 @@
 :root {
-  /* --color-primary: #00d9ff; */
-   --color-primary: #76e8fc;
+
+   /* --color-primary: #76e8fc; */
+    --color-primary: #a8eefa;
   --color-2: #cd32b3;
   --color-bg-1: #03384e;
   --color-bg-2: #012332;
   --color-bg-3: #011d29;
+
+  --color-green: #03384e;
+  --color-bg-1: #165B44;
+  --color-green-highlight: #4C9C7A;
 
   --color-text-grey: #e1e1e1;
 }
