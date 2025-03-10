@@ -68,7 +68,7 @@ const Skills: React.FC = () => {
             As a web developer I thouroughly enjoy solving problems, learning
             perpetually and staying abreast of the lastest trends and
             technologies in the industry. I would love the opportunity to
-            leverage my expertise and provide innovative solutions to your
+            leverage my expertise and provide solutions to your
             unique business challenges!
           </p>
           <p>

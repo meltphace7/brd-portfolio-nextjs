@@ -118,20 +118,6 @@ const ProjectsSection: React.FC = () => {
           image={AlpinePrintsIMG}
           stack={["React", "NodeJS", "Express", "MongoDB", "AWS"]}
         />
-
-        {/* <Project
-          title="Beer Quest"
-          description=" Beer Quest is a React app that allows a user to search for
-              breweries in a city. When the user selects a brewery, data is
-              displayed, such as the phone number, address and a link to the
-              website. When users click the address link, they are redirected to
-              google maps with the address to the brewery plugged in. Users can
-              save a brewery by adding it to their favorites which are stored on
-              their browser in local storage."
-          link="https://beer-quest.vercel.app/"
-          image={BeerQuestIMG}
-          stack={["React"]}
-        /> */}
       </div>
       <MobileProjectsSection />
     </section>
