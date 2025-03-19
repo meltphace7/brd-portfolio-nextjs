@@ -83,7 +83,7 @@ const Navigation: React.FC = () => {
         </li>
         <li>
           <Link
-            className={classes["nav-link"]}
+            className={`${classes["nav-link"]} ${classes["contact-link"]}`}
             to="contact"
             spy={true}
             smooth={true}

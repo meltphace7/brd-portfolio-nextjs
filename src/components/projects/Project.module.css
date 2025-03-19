@@ -41,7 +41,7 @@
 .project-img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
@@ -49,30 +49,21 @@
   transition: border 150ms ease-in;
 }
 
-.project-text {
+.project-text,
+.project-text-alt
+ {
   width: 38%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.project-text-alt {
-  width: 38%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.project-header {
+.project-header,
+.project-header-alt
+ {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-
-.project-header-alt {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .project-header h2,
@@ -81,23 +72,11 @@
    font-size: 2rem;
 }
 
-.project-description {
-  width: 125%;
-  margin: 2rem 0;
-  background-color: var(--color-bg-2);
-  color: var(--color-text-grey);
-  z-index: 2;
-  padding: 2rem 2rem 2rem 4rem;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
-  box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
-}
-
+.project-description,
 .project-description-alt {
   width: 125%;
   margin: 2rem 0;
-  background-color: var(--color-bg-2);
+  background-color: var(--color-secondary);
   color: var(--color-text-grey);
   z-index: 2;
   padding: 2rem 2rem 2rem 4rem;

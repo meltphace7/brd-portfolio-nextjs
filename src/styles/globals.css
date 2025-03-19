@@ -1,8 +1,11 @@
 :root {
    /* --color-primary: #76e8fc; */
-    --color-primary: #a8eefa;
-  --color-2: #cd32b3;
+    /* --color-primary: #a8eefa; */
+     --color-primary: #BDFE00;
   /* --color-bg-1: #03384e; */
+  --color-secondary: #1b1b1b;
+  /* ---------- */
+   /* ---------- */
    --color-bg-1: #01131b;
   --color-bg-2: #012332;
   --color-bg-3: #011d29;
@@ -14,6 +17,15 @@
 
   --color-neon-green: #BDFE00;
   --color-dark-grey: #1A1B1D;
+
+  /* --color-jade:#065b47; */
+
+  /* ---- JADE COLOR--- */
+  --color-jade-darkest: #03110c;
+  --color-jade-dark: #062117;
+  --color-jade-mid: #093223;
+   --color-jade: #0c432e;
+    --color-jade-light: #1c9668;
 
 }
 
