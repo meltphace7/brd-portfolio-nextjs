@@ -14,16 +14,9 @@ const Header: React.FC = () => {
   };
 
   useEffect(() => {
-    // if (offsetY > 300) {
-    //   setAboutCrossed(true);
-    // }
-
-    // if (aboutCrossed && offsetY < 300) {
-    //   setAboutCrossed(false);
-    // }
       const checkThreshold = () => {
         const isSmallScreen = window.matchMedia("(max-width: 50em)").matches;
-        const threshold = isSmallScreen ? 600 : 300;
+        const threshold = isSmallScreen ? 700 : 300;
 
         if (offsetY > threshold) {
           setAboutCrossed(true);
