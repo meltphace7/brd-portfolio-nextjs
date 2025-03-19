@@ -2,6 +2,8 @@ import React, {useState, useEffect } from "react";
 import Image from "next/image";
 import classes from "./Project.module.css";
 import { useInView } from "react-intersection-observer";
+import LinkIcon from "../../../public/assets/imgs/link-icon.svg";
+
 
 interface ProjectsProps {
   title: string;
@@ -69,12 +71,30 @@ const Project: React.FC<ProjectsProps> = (props) => {
         </div>
         <div className={classes["project-description"]}>
           <p>{props.description}</p>
+          <ul className={classes["project-technologies"]}>
+            {props.stack.map((s: string, i: number) => {
+              return <li key={i}>{s}</li>;
+            })}
+          </ul>
         </div>
-        <ul className={classes["project-technologies"]}>
-          {props.stack.map((s: string, i: number) => {
-            return <li key={i}>{s}</li>;
-          })}
-        </ul>
+        <a
+          className={classes["project-link-btn"]}
+          href={props.link}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Link to ${props.link}`}
+        >
+          <span>
+            {" "}
+            <Image
+              className={classes["project-img"]}
+              src={LinkIcon}
+              alt={`Link Icon to ${props.title} website`}
+              unoptimized
+            />
+          </span>
+          {`${props.title}`}
+        </a>
       </div>
     </section>
   );

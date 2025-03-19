@@ -26,7 +26,17 @@ const Navigation: React.FC = () => {
   return (
     <nav className={navClasses}>
       <div className={classes["logo-container"]}>
-        <Image src={logo} alt="Brock Dallman Logo" />
+        <Link
+          className={classes["nav-link"]}
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          aria-label="To Home Section"
+        >
+          <Image src={logo} alt="Brock Dallman Logo" />
+        </Link>
       </div>
       <ul className={classes["nav-menu"]}>
         <li>

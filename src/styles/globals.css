@@ -1,32 +1,7 @@
 :root {
-   /* --color-primary: #76e8fc; */
-    /* --color-primary: #a8eefa; */
-     --color-primary: #BDFE00;
-  /* --color-bg-1: #03384e; */
+  --color-primary: #bdfe00;
   --color-secondary: #1b1b1b;
-  /* ---------- */
-   /* ---------- */
-   --color-bg-1: #01131b;
-  --color-bg-2: #012332;
-  --color-bg-3: #011d29;
-  --color-green: #03384e;
-  /* --color-bg-1: #165B44; */
-  --color-green-highlight: #4C9C7A;
-  --color-text-grey: #e1e1e1;
-
-
-  --color-neon-green: #BDFE00;
-  --color-dark-grey: #1A1B1D;
-
-  /* --color-jade:#065b47; */
-
-  /* ---- JADE COLOR--- */
-  --color-jade-darkest: #03110c;
-  --color-jade-dark: #062117;
-  --color-jade-mid: #093223;
-   --color-jade: #0c432e;
-    --color-jade-light: #1c9668;
-
+  --color-tertiary: #6a6a6a;
 }
 
 @font-face {
@@ -151,8 +126,7 @@ body {
   width: 100%;
   font-weight: 200;
   letter-spacing: 0.05rem;
-  /* background-color: var(--main-color-bg-1); */
-
+  background-color: var(--color-secondary);
 }
 
 @media (max-width: 40em) {
@@ -208,11 +182,13 @@ textarea {
 .section-title {
   font-size: 5vw;
   margin-bottom: 5rem;
-  color: transparent;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  /* color: transparent;
   background-image: linear-gradient(to right, #fff, var(--color-primary));
   background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow); */
 }
 
 @media (max-width: 50em) {

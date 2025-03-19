@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react';
 import Image from 'next/image';
 import classes from './ProjectMobile.module.css';
 import { useInView } from "react-intersection-observer";
+import LinkIconAlt from "../../../public/assets/imgs/link-icon-alt.svg";
 
 interface ProjectMobileProps {
   title: string;
@@ -71,6 +72,24 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
           })}
         </ul>
       </div>
+      <a
+        className={classes["project-link-btn"]}
+        href={props.link}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Link to ${props.link}`}
+      >
+        {`${props.title}`}
+        <span>
+          {" "}
+          <Image
+            className={classes["project-img"]}
+            src={LinkIconAlt}
+            alt={`Link Icon to ${props.title} website`}
+            unoptimized
+          />
+        </span>
+      </a>
     </section>
   );
 }

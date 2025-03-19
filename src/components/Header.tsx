@@ -45,7 +45,7 @@ const Header: React.FC = () => {
             <h2>Web Developer</h2>
             <p>
               Hi, I&#39;m Brock! I design and develop beautiful and engaging
-              websites. Let&#39;s bring your vision to l!
+              websites. Let&#39;s bring your vision to life!
             </p>
             <Link
               className={classes["nav-link"]}

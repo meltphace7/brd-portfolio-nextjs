@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./BioSection.module.css";
 import Image from 'next/image';
-import BioPic from "../../public/assets/imgs/BROCK_MTN-PORTRAIT-HQ.jpg";
+import BioPic from "../../public/assets/imgs/WA_BROCK_SUMMIT_POSE.jpg";
 
 const BioSection: React.FC = () => {
   return (
@@ -10,8 +10,7 @@ const BioSection: React.FC = () => {
       <div className={classes["bio-container"]}>
         <div className={classes["bio-text"]}>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! My name is
-            Brock and I&apos;m a web developer. As a&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a&nbsp;
             <a
               className={classes["bio-link"]}
               href="https://brockdallmanphotography.com/"
@@ -19,7 +18,7 @@ const BioSection: React.FC = () => {
               rel="noreferrer"
               aria-label="Link to brockdallmanphotography.com"
             >
-              photographer
+              landscape photographer
             </a>
             &nbsp;and&nbsp;
             <a
@@ -38,11 +37,8 @@ const BioSection: React.FC = () => {
           </p>
           <p>
             I started taking online courses to expand my knowledge and skill set.
-            Since learning Javascript, Node, MongoDB, Express, React, NextJS and Wordpress theme development, I have been designing and coding a variety of projects,
-            always prioritizing a responsive and user friendly design. My
-            projects have included features such as inventory management, user signup,
-            login, accounts, authentication, admin privileges,
-            CRUD operations, email contact forms, online shops, image uploads to AWS S3 buckets and more.
+            Since learning Javascript, NodeJS, MongoDB, Express, React, NextJS and Wordpress theme development, I have been designing and coding a variety of projects,
+            always prioritizing a responsive and user friendly design.
           </p>
           <p>
             I look forward to collaborating with you to create awesome,

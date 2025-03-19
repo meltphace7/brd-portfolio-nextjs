@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  animation: fadeIn 3000ms ease-in forwards;
 }
 
 .header::after {
@@ -20,7 +20,6 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: #03384ed2;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
@@ -30,14 +29,14 @@
 }
 
 .hero__content {
-    z-index: 1;
+  z-index: 1;
   width: 100%;
-  height:100%;
-   display: flex;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
-    transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
 .hero__text {
@@ -51,7 +50,7 @@
 
 .hero__text h1 {
   font-size: 4rem;
-  color: var(--color-neon-green);
+  color: var(--color-primary);
 }
 
 .hero__text h2 {
@@ -75,7 +74,7 @@
 
 .hero__text a {
   padding: 2rem 4rem;
-  background-color: var(--color-neon-green);
+  background-color: var(--color-primary);
   color: black;
   font-size: 2.2rem;
   cursor: pointer;
@@ -96,7 +95,7 @@
   justify-content: center;
   border-radius: 100%;
   overflow: hidden;
-  border: 3px solid var(--color-neon-green);
+  border: 3px solid var(--color-primary);
 }
 
 .hero__img-container img {
@@ -105,55 +104,9 @@
   object-fit: cover;
 }
 
-/* .header-overlay {
-  width: 100%;
-  height: 80rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: bgFade 3000ms ease-in forwards;
-} */
-
-@keyframes bgFade {
-  0% {
-    background-color: #03384e;
-  }
-
-  50% {
-    background-color: #03384e;
-  }
-
-  100% {
-    background-color: #03384ed2;
-  }
-}
-
-/* .title-container {
-  opacity: 1;
-  margin-top: 25rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: opacity 300ms ease-in;
-} */
-
 .fade-out {
   opacity: 0;
 }
-
-/* .title-container h1 {
-  position: relative;
-  font-size: 6vw;
-  font-weight: 300;
-  color: white;
-  animation: fadeIn 1000ms ease-in forwards;
-  color: transparent;
-  background-image: linear-gradient(to right, #fff, var(--color-primary));
-  background-clip: text;
-  -webkit-background-clip: text;
-
-} */
 
 @keyframes fadeIn {
   0% {
@@ -165,21 +118,27 @@
   }
 }
 
-/* .title-container h2 {
-  font-size: 3vw;
-  color: var(--color-primary);
-  background-color: #000000;
-  padding: 1rem;
-  animation: h2FadeIn 2000ms ease-in;
-  transform: skew(-25deg);
-} */
-
-@keyframes h2FadeIn {
-  0% {
-    opacity: 0;
+@media (max-width: 60em) {
+  .hero__content {
+    gap: 1rem;
   }
 
-  100% {
-    opacity: 1;
+  .hero__text p {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 50em) {
+  .hero__content {
+    flex-direction: column;
+  }
+
+  .hero__text {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+
+  .hero__content {
+    padding: 15rem 0 5rem 0;
   }
 }

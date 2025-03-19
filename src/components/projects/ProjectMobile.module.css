@@ -67,7 +67,7 @@
 .project-description {
   width: 97%;
   margin: 2rem 0;
-  background-color: var(--color-bg-2);
+  background-color: var(--color-secondary);
   color: var(--color-text-grey);
   z-index: 2;
   padding: 1rem;
@@ -88,6 +88,35 @@
   font-size: 1.6rem;
   color: var(--color-primary);
 }
+
+.project-link-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: #000;
+  border-radius: 5px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: all 250ms ease;
+}
+
+
+.project-link-btn span img {
+  height: 2rem;
+  box-shadow: unset;
+  width: auto;
+}
+
+.project-link-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  font-size: 2rem;
+  gap: 3rem;
+}
+
 
 @media (max-width: 48em) {
   .mobile-projects {

@@ -13,7 +13,8 @@ import { SiTypescript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
-import Icon from "../../public/assets/imgs/mongoose.js";
+// import Icon from "../../public/assets/imgs/mongoose.js";
+import { SiMongoose } from "react-icons/si";
 
 const Skills: React.FC = () => {
   return (
@@ -45,11 +46,11 @@ const Skills: React.FC = () => {
           <p>
             I also specialize in developing custom WordPress themes, tailored to
             the unique needs of each business. As the world&apos;s most popular
-            content management system.  Powering approximately 43% of all
-            websites, WordPress offers flexibility, scalability, and ease of use.
-            My custom-built WordPress sites empower administrators to manage
-            business data efficiently while maintaining control over key aspects
-            of their website.
+            content management system. Powering approximately 43% of all
+            websites, WordPress offers flexibility, scalability, and ease of
+            use. My custom-built WordPress sites empower administrators to
+            manage business data efficiently while maintaining control over key
+            aspects of their website.
           </p>
 
           <p>
@@ -68,8 +69,8 @@ const Skills: React.FC = () => {
             As a web developer I thouroughly enjoy solving problems, learning
             perpetually and staying abreast of the lastest trends and
             technologies in the industry. I would love the opportunity to
-            leverage my expertise and provide solutions to your
-            unique business challenges!
+            leverage my expertise and provide solutions to your unique business
+            challenges!
           </p>
           <p>
             Click on the following link for my{" "}
@@ -142,7 +143,7 @@ const Skills: React.FC = () => {
               <p>MongoDB</p>
             </li>
             <li className={classes["skill"]}>
-              <Icon />
+              <SiMongoose className={classes["icon"]} size={20} />
               <p>Mongoose</p>
             </li>
             <li className={classes["skill"]}>
