@@ -65,12 +65,12 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
       <div className={classes["project-text"]}>
         <div className={classes["project-description"]}>
           <p>{props.description}</p>
+          <ul className={classes["project-technologies"]}>
+            {props.stack.map((text: string, index: number) => {
+              return <li key={index}>{text}</li>;
+            })}
+          </ul>
         </div>
-        <ul className={classes["project-technologies"]}>
-          {props.stack.map((text: string, index: number) => {
-            return <li key={index}>{text}</li>;
-          })}
-        </ul>
       </div>
       <a
         className={classes["project-link-btn"]}
