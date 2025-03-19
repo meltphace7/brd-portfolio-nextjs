@@ -6,6 +6,7 @@
   align-items: center;
   color: white;
   padding: 5rem 0 10rem 0;
+  z-index: 1;
 }
 
 .bio-container {

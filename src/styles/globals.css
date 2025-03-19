@@ -1,5 +1,4 @@
 :root {
-
    /* --color-primary: #76e8fc; */
     --color-primary: #a8eefa;
   --color-2: #cd32b3;
@@ -7,12 +6,15 @@
    --color-bg-1: #01131b;
   --color-bg-2: #012332;
   --color-bg-3: #011d29;
-
   --color-green: #03384e;
   /* --color-bg-1: #165B44; */
   --color-green-highlight: #4C9C7A;
-
   --color-text-grey: #e1e1e1;
+
+
+  --color-neon-green: #BDFE00;
+  --color-dark-grey: #1A1B1D;
+
 }
 
 @font-face {
@@ -137,7 +139,7 @@ body {
   width: 100%;
   font-weight: 200;
   letter-spacing: 0.05rem;
-  background-color: var(--main-color-bg-1);
+  /* background-color: var(--main-color-bg-1); */
 
 }
 

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Header.module.css";
+import Image from "next/image";
+import BioPic from "../../public/assets/imgs/BROCK_MTN-PORTRAIT-HQ.jpg";
+import { Link } from "react-scroll";
 
 const Header: React.FC = () => {
   // Parallax effect for Header
@@ -36,14 +39,27 @@ const Header: React.FC = () => {
         className={classes.header}
         style={{ transform: `translateY(${offsetY * 0.5}px)` }}
       >
-        <div className={classes["header-overlay"]}>
-          <div
-            style={{ transform: `translateY(${offsetY * 0.1}px)` }}
-            className={titleClasses}
+        <div className={classes["hero__text"]}>
+          <h1>BROCK DALLMAN</h1>
+          <h2>Web Developer</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+            illum minus ad optio numquam?
+          </p>
+          <Link
+            className={classes["nav-link"]}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-75}
+            duration={500}
+            aria-label="To Contact Section"
           >
-            <h1>{`<BROCK DALLMAN />`}</h1>
-            <h2>Web Developer</h2>
-          </div>
+            Get In Touch
+          </Link>
+        </div>
+        <div className={classes["hero__img-container"]}>
+          <Image src={BioPic} alt="Brock Dallman" priority />
         </div>
       </header>
     </React.Fragment>
