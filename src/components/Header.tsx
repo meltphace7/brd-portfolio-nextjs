@@ -14,14 +14,26 @@ const Header: React.FC = () => {
   };
 
   useEffect(() => {
-    if (offsetY > 300) {
-      setAboutCrossed(true);
-    }
+    // if (offsetY > 300) {
+    //   setAboutCrossed(true);
+    // }
 
-    if (aboutCrossed && offsetY < 300) {
-      setAboutCrossed(false);
-    }
-  }, [offsetY]);
+    // if (aboutCrossed && offsetY < 300) {
+    //   setAboutCrossed(false);
+    // }
+      const checkThreshold = () => {
+        const isSmallScreen = window.matchMedia("(max-width: 50em)").matches;
+        const threshold = isSmallScreen ? 600 : 300;
+
+        if (offsetY > threshold) {
+          setAboutCrossed(true);
+        } else if (aboutCrossed && offsetY < threshold) {
+          setAboutCrossed(false);
+        }
+      };
+
+      checkThreshold();
+  }, [offsetY, aboutCrossed]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

@@ -129,6 +129,7 @@
 }
 
 @media (max-width: 50em) {
+
   .hero__content {
     flex-direction: column;
   }
@@ -140,5 +141,6 @@
 
   .hero__content {
     padding: 15rem 0 5rem 0;
+    
   }
 }

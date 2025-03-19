@@ -80,8 +80,20 @@ box-shadow: 7px 7px 0px -2px #000;
   }
 }
 
+@media (max-width: 50em) {
+  .bio-section {
+      margin-top: 35rem;
+  }
+}
+
 @media (max-width: 35em) {
+
   .bio-container {
     width: 98%;
+  
   }
+
+
+
+    
 }
