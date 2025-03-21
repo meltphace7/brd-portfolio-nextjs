@@ -7,8 +7,15 @@ import LogoWhite from "../../public/assets/imgs/BD-LOGO-WHITE.svg";
 import LogoBlack from "../../public/assets/imgs/BD-LOGO-BLACK.svg";
 import useScrollDirection from "../hooks/use-scroll-direction";
 
+import { IoSunny } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
+
 const Navigation: React.FC = () => {
   const { darkModeOn, toggleDarkMode } = useTheme();
+
+  const themeSwitchClasses = darkModeOn
+    ? `${classes["theme-toggle-btn__circle"]} ${classes["toggle-theme-off"]}`
+    : `${classes["theme-toggle-btn__circle"]} ${classes["toggle-theme-on"]}`;
 
   const scrollDirection = useScrollDirection();
 
@@ -60,23 +67,15 @@ const Navigation: React.FC = () => {
           </Link>
         </div>
         <ul className={classes["nav-menu"]}>
-          {/* <li>
-          <Link
-            className={classes["nav-link"]}
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            aria-label="To Home Section"
-          >
-            Home
-          </Link>
-        </li>{" "} */}
           <li>
             <button
-              className={classes['theme-toggle-btn']}
-              onClick={toggleDarkMode}><span></span></button>
+              className={classes["theme-toggle-btn"]}
+              onClick={toggleDarkMode}
+            >
+              <IoSunny className={classes["toggle-sun"]} size={15} />
+              <IoMoon className={classes["toggle-moon"]} size={15} />
+              <div className={themeSwitchClasses}></div>
+            </button>
           </li>
           <li>
             <Link

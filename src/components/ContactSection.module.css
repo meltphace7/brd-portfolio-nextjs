@@ -68,11 +68,6 @@
     border: 1px solid var(--color-tertiary);
 }
 
-.form__row input:focus {
-  outline: unset;
-   border: 1px solid var(--color-primary);
-}
-
 .form__message {
   height: 20rem;
   min-width: 98%;
@@ -81,21 +76,37 @@
   border: 1px solid #808080;
 }
 
-.form__message:focus {
-  outline: unset;
-   border: 1px solid var(--color-primary);
-}
-
 .dark {
    background-color: #000;
     color: #ffffff;
 }
+
+
 
 .light {
     background-color: #fff;
     color: #000;
 }
 
+.dark input:focus {
+   outline: unset;
+ border: 1px solid var(--color-primary);
+}
+
+.dark textarea:focus {
+   outline: unset;
+  border: 1px solid var(--color-primary);
+}
+
+.light input:focus {
+   outline: unset;
+ border: 2px solid var(--color-primary-lm);
+}
+
+.light textarea:focus {
+   outline: unset;
+  border: 2px solid var(--color-primary-lm);
+}
 
 .form__input--subject {
   width: 98%;

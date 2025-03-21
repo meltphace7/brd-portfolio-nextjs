@@ -19,10 +19,12 @@
 }
 
 .nav-light {
+
   color: #000;
 }
 
 .nav-dark {
+
   color: #fff;
 }
 
@@ -133,17 +135,54 @@
 }
 
 .sticky-nav-light {
-    background-color: #c0c0c09a;
+    background-color: #ffffff9a;
  
 }
 
 .theme-toggle-btn {
-  background-color: #fff;
-  width: 2rem;
-  height: 2rem;
+  position: relative;
+  background-color: rgb(90, 90, 90);
+ padding: .1rem;
+  min-width: 4rem;
+  min-height: 2rem;
   border-radius: 100rem;
   cursor: pointer;
-  border: 1px solid black;
+  border: unset;
+  display: flex;
+  align-items: center;
+  transition: all 250ms ease;
+  overflow: hidden;
+}
+
+.theme-toggle-btn__circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20rem;
+z-index: 1;
+  transition: all 250ms ease;
+  border: 1px solid #fff;
+}
+
+.toggle-sun {
+  left: .2rem;
+    position: absolute;
+  color: yellow;
+}
+
+.toggle-moon {
+    position: absolute;
+    right: .2rem;
+  color: #fff;
+  
+}
+
+.toggle-theme-off {
+  background-color: #000;
+}
+
+.toggle-theme-on {
+    background-color: #fff;
+  transform: translateX(1.8rem);
 }
 
 @keyframes stickyDrop {

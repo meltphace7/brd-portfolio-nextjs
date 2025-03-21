@@ -65,9 +65,7 @@ background-color: var(--color-secondary-lm);
   margin-left: 2rem;
   border-radius: 10px;
   overflow: hidden;
--webkit-box-shadow: 7px 7px 0px -2px #000;
--moz-box-shadow: 7px 7px 0px -2px #000;
-box-shadow: 7px 7px 0px -2px #000;
+
 }
 
 
