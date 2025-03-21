@@ -107,7 +107,7 @@ const Skills: React.FC = () => {
           </p>
         </div>
         <div className={classes["skills-display-container"]}>
-          <h3>TECHNOLOGIES</h3>
+          <h2>TECHNOLOGIES</h2>
 
           <ul className={classes["skills-grid"]}>
             <li className={classes["skill"]}>

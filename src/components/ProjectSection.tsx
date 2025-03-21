@@ -15,9 +15,8 @@ import Project from "./projects/Project";
 import ProjectAlt from "./projects/ProjectAlt";
 import { useTheme } from "../store/theme-context";
 
-
 const ProjectsSection: React.FC = () => {
-    const { darkModeOn, toggleDarkMode } = useTheme();
+    const { darkModeOn } = useTheme();
 
     const sectionTitleClasses = darkModeOn
       ? `section-title section-title--dark`
