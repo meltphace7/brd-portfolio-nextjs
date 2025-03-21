@@ -162,7 +162,7 @@
 
 .project-link-btn--light {
   background-color: var(--color-primary-lm);
-  color: #000;
+  color: #fff;
 }
 
 .project-link-btn:hover {
