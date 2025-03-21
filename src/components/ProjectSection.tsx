@@ -62,7 +62,7 @@ const ProjectsSection: React.FC = () => {
         />
         <ProjectAlt
           title="Olympic Crest Marine"
-          description="Olympic Crest Marine is a fully responsive, custom Wordpress theme I developed for a boat dealership.  Leveraging the power of custom post types and Advanced Custom Fields, it allows the site admin to manage their boat inventory from the Wordpress Admin dashboard.  There they can add images, information and specs for each boat.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email."
+          description="Olympic Crest Marine is a fully responsive, custom Wordpress theme I developed for a boat dealership.  Leveraging the power of custom post types and Advanced Custom Fields, it allows the site admin to manage their boat inventory from the Wordpress Admin dashboard.  There they can add images, information and specs for each boat.  The site also has a contact form which utilizes an SMTP Mailer to deliver user emails to the admin's email.  The Boat Inventory page allows users to filter and sort boats by attributes like boat manufacturer, length, price and more."
           link="#"
           image={OlympicCrestIMG}
           stack={["Wordpress", "PHP", "Javascript", "SASS"]}

@@ -142,7 +142,7 @@
 .project-link-btn {
   margin-top: 2rem;
   padding: 1rem 2rem;
-
+ text-transform: uppercase;
   border-radius: 5px;
   font-size: 2rem;
   display: flex;
@@ -168,8 +168,9 @@
   color: #fff;
 }
 
-.project-link-btn:hover {
-  gap: 3rem;
+.project-link-btn--light:hover {
+    background-color: #000;
+  color: #fff;
 }
 
 .project-link-btn--dark:hover {

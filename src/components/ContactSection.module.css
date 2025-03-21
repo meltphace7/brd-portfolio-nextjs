@@ -15,7 +15,7 @@
 }
 
 .form {
-  border-radius: 5px;
+  border-radius: var(--border-radius-btn);
   width: 55%;
   min-height: 45rem;
   display: flex;
@@ -126,7 +126,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   height: 6rem;
-  border-radius: 3px;
+   border-radius: var(--border-radius-btn);
   transition: all 200ms;
   cursor: pointer;
   border: unset;

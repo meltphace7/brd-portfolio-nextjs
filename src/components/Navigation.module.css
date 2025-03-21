@@ -88,7 +88,7 @@
 
 .contact-link {
   padding: 1rem 2rem;
-  border-radius: 50rem;
+  border-radius: var(--border-radius-btn);
   transition: all 250ms ease;
 }
 
@@ -104,8 +104,8 @@
 }
 
 .contact-link-light {
-  color: #fff;
-  background-color: var(--color-primary-lm);
+  color: var(--color-primary-lm);
+ 
   border: 1px solid var(--color-primary-lm);
 }
 
@@ -132,8 +132,9 @@
 .sticky-nav-light {
   background-color: #ffffff9a;
 }
-
+/*------- THEME TOGGLE BUTTON ----------------------- */
 .theme-toggle-btn {
+  opacity: 50%;
   position: absolute;
   right: 2%;
   top: 7.5rem;
@@ -162,7 +163,7 @@
 .toggle-sun {
   left: 0.2rem;
   position: absolute;
-  color: #ffff00;
+  color: #fff;
 }
 
 .toggle-moon {
