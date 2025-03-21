@@ -27,6 +27,7 @@ const Footer: React.FC = () => {
         offset={0}
         duration={500}
         aria-label="To Home Section"
+        href="/"
       >
         <Image src={Logo} alt="Brock Dallman logo" />
         <p>{`Brock Dallman ${currentYear}`}</p>

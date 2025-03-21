@@ -62,6 +62,7 @@ const Navigation: React.FC = () => {
             offset={0}
             duration={500}
             aria-label="To Home Section"
+            href="/"
           >
             <Image src={Logo} alt="Brock Dallman Logo" />
           </Link>
@@ -76,6 +77,7 @@ const Navigation: React.FC = () => {
               offset={-75}
               duration={500}
               aria-label="To About Section"
+              href="#about"
             >
               About
             </Link>
@@ -89,6 +91,7 @@ const Navigation: React.FC = () => {
               offset={-75}
               duration={500}
               aria-label="To Expertise Section"
+              href="#expertise"
             >
               Expertise
             </Link>
@@ -102,6 +105,7 @@ const Navigation: React.FC = () => {
               offset={-75}
               duration={500}
               aria-label="To Projects Section"
+              href="#projects"
             >
               Projects
             </Link>
@@ -115,6 +119,7 @@ const Navigation: React.FC = () => {
               offset={-75}
               duration={500}
               aria-label="To Contact Section"
+              href="#contact"
             >
               Contact
             </Link>
