@@ -123,6 +123,9 @@ const Navigation: React.FC = () => {
         <button
           className={classes["theme-toggle-btn"]}
           onClick={toggleDarkMode}
+          aria-label="Theme toggle button"
+          aria-checked
+          role="switch"
         >
           <IoSunny className={classes["toggle-sun"]} size={15} />
           <IoMoon className={classes["toggle-moon"]} size={15} />

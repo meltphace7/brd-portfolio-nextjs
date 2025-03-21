@@ -132,12 +132,24 @@
 .sticky-nav-light {
   background-color: #ffffff9a;
 }
+
+@keyframes stickyDrop {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
 /*------- THEME TOGGLE BUTTON ----------------------- */
 .theme-toggle-btn {
   opacity: 50%;
   position: absolute;
-  right: 2%;
-  top: 7.5rem;
+  right: 1%;
+  top: 5%;
   background-color: rgb(90, 90, 90);
   padding: 0.1rem;
   min-width: 4rem;
@@ -149,6 +161,7 @@
   align-items: center;
   transition: all 250ms ease;
   overflow: hidden;
+   animation: toggleFadeIn 2000ms ease-in forwards;
 }
 
 .theme-toggle-btn__circle {
@@ -181,17 +194,22 @@
   transform: translateX(1.8rem);
 }
 
-@keyframes stickyDrop {
+@keyframes toggleFadeIn {
   0% {
     opacity: 0;
-    top: -10rem;
   }
 
+  70% {
+     opacity: 0;
+  }
+
+
   100% {
-    opacity: 1;
-    top: 0rem;
+    opacity: .5;
   }
 }
+
+
 
 @media (max-width: 60em) {
   .nav-menu {
@@ -213,7 +231,16 @@
   .logo-container img {
     height: 7rem;
   }
+
 }
+
+@media (max-width: 43em) {
+    .theme-toggle-btn {
+  right: 2%;
+  top: 7.5rem;
+}
+}
+
 
 @media (max-width: 40em) {
   .nav-menu {
