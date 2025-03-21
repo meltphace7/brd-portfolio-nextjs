@@ -68,16 +68,6 @@ const Navigation: React.FC = () => {
         </div>
         <ul className={classes["nav-menu"]}>
           <li>
-            <button
-              className={classes["theme-toggle-btn"]}
-              onClick={toggleDarkMode}
-            >
-              <IoSunny className={classes["toggle-sun"]} size={15} />
-              <IoMoon className={classes["toggle-moon"]} size={15} />
-              <div className={themeSwitchClasses}></div>
-            </button>
-          </li>
-          <li>
             <Link
               className={classes["nav-link"]}
               to="about"
@@ -130,6 +120,14 @@ const Navigation: React.FC = () => {
             </Link>
           </li>
         </ul>
+        <button
+          className={classes["theme-toggle-btn"]}
+          onClick={toggleDarkMode}
+        >
+          <IoSunny className={classes["toggle-sun"]} size={15} />
+          <IoMoon className={classes["toggle-moon"]} size={15} />
+          <div className={themeSwitchClasses}></div>
+        </button>
       </nav>
     </header>
   );
