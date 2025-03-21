@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             <h1>BROCK DALLMAN</h1>
             <h2>Web Developer</h2>
             <p>
-              Hi, I&#39;m Brock! I design and develop beautiful and engaging
+              Hi, I&#39;m Brock! I design and develop
               websites. Let&#39;s bring your vision to life!
             </p>
             <Link

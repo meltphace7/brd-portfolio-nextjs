@@ -26,14 +26,16 @@
 
 .project-title {
  font-family: "Clash-Display", sans-serif;
+ text-transform: uppercase;
  font-weight: 500;
-  font-size: 4.2rem;
+  font-size: 4rem;
   z-index: 9999;
   transition: color 200ms ease-in;
 }
 
-.project-title:hover {
-  color: var(--color-primary);
+.project-text .project-title {
+  display: block;
+  text-align:right;
 }
 
 .project-img_container {

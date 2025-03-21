@@ -15,6 +15,7 @@ import { FaPhp } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 import { SiMongoose } from "react-icons/si";
 import { useTheme } from "../store/theme-context";
+import { SiTailwindcss } from "react-icons/si";
 
 const Skills: React.FC = () => {
   const { darkModeOn } = useTheme();
@@ -60,7 +61,7 @@ const Skills: React.FC = () => {
           <p>
             I also specialize in developing custom WordPress themes, tailored to
             the unique needs of each business. As the world&apos;s most popular
-            content management system. Powering approximately 43% of all
+            content management system; powering approximately 43% of all
             websites, WordPress offers flexibility, scalability, and ease of
             use. My custom-built WordPress sites empower administrators to
             manage business data efficiently while maintaining control over key
@@ -165,6 +166,10 @@ const Skills: React.FC = () => {
             <li className={classes["skill"]}>
               <FaWordpress className={iconClasses} size={20} />
               <p>Wordpress</p>
+            </li>
+            <li className={classes["skill"]}>
+              <SiTailwindcss className={iconClasses} size={20} />
+              <p>Tailwind</p>
             </li>
           </ul>
         </div>

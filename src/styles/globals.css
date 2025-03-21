@@ -7,10 +7,6 @@
   --color-primary-lm: #2c630e;
   --color-secondary-lm: #ffffff;
   --color-tertiary-lm: #6a6a6a;
-
-  --text-shadow: 4px 2px 0px rgba(0, 0, 0, 1);
-  --box-shadow: 4px 2px 0px rgba(0, 0, 0, 1);
-
   --ms-theme: 500ms;
 }
 
@@ -216,7 +212,7 @@ textarea {
   }
 }
 
-.dark {
+/* .dark {
   background-color: #000;
   color: #ffffff;
 }
@@ -224,17 +220,15 @@ textarea {
 .light {
   background-color: #fff;
   color: #000;
-}
+} */
 
 .background-dark {
 
   background: #555555;
   background: radial-gradient(circle, #555555 0%, #000000 100%);
-  background-color: red;
 }
 
 .background-light {
-
   background: #ffffff;
   background: radial-gradient(circle, #ffffff 0%, #d4d4d4 100%);
 }
