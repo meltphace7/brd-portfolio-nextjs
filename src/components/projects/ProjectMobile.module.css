@@ -29,6 +29,9 @@
 }
 
 .project-title {
+   font-family: "Clash-Display", sans-serif;
+ text-transform: uppercase;
+ font-weight: bold;
   color: white;
   font-size: 4rem;
   z-index: 9999;
