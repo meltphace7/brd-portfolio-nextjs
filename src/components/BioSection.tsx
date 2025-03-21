@@ -45,9 +45,11 @@ const BioSection: React.FC = () => {
             began to pursue web development as a career path.
           </p>
           <p>
-            I started taking online courses to expand my knowledge and skill set.
-            Since learning Javascript, NodeJS, MongoDB, Express, React, NextJS and Wordpress theme development, I have been designing and coding a variety of projects,
-            always prioritizing a responsive and user friendly design.
+            I started taking online courses to expand my knowledge and skill
+            set. Since learning Javascript, NodeJS, MongoDB, Express, React,
+            NextJS and Wordpress theme development, I have been designing and
+            coding a variety of projects, always prioritizing a responsive and
+            user friendly design.
           </p>
           <p>
             I look forward to collaborating with you to create awesome,
@@ -56,7 +58,13 @@ const BioSection: React.FC = () => {
           </p>
         </div>
         <div className={classes["bio-img__container"]}>
-          <Image src={BioPic} alt="Brock Dallman" priority />
+          <Image
+            src={BioPic}
+            alt="Brock Dallman"
+            priority
+            width={400}
+            height={400}
+          />
         </div>
       </div>
     </section>

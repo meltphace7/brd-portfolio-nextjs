@@ -64,7 +64,7 @@ const Navigation: React.FC = () => {
             aria-label="To Home Section"
             href="/"
           >
-            <Image src={Logo} alt="Brock Dallman Logo" />
+            <Image src={Logo} alt="Brock Dallman Logo" priority width={50} height={50} />
           </Link>
         </div>
         <ul className={classes["nav-menu"]}>

@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
         aria-label="To Home Section"
         href="/"
       >
-        <Image src={Logo} alt="Brock Dallman logo" />
+        <Image src={Logo} alt="Brock Dallman logo" width={50} height={50} />
         <p>{`Brock Dallman ${currentYear}`}</p>
       </Link>
     </footer>

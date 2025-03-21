@@ -81,7 +81,13 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div className={imgContainerClasses}>
-            <Image src={BioPic} alt="Brock Dallman" priority />
+            <Image
+              src={BioPic}
+              alt="Brock Dallman"
+              priority
+              width={400}
+              height={400}
+            />
           </div>
         </div>
       </section>

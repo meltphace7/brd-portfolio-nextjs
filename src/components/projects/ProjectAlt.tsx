@@ -112,6 +112,8 @@ const ProjectAlt: React.FC<ProjectsProps> = (props) => {
           className={classes["project-img"]}
           src={props.image}
           alt={`Screen shot of Brock Dallman's ${props.title} website`}
+          width={600}
+          height={400}
         />
       </div>
     </section>
