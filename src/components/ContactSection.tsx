@@ -2,11 +2,41 @@ import React, { useState, useEffect } from "react";
 import { useForm } from "@formspree/react";
 import classes from "./ContactSection.module.css";
 import ModalMessage from "./notifications/ModalMessage";
+import { useTheme } from "../store/theme-context";
 
 const ContactSection: React.FC = () => {
+   const { darkModeOn } = useTheme();
   const [state, handleSubmit] = useForm("meqweoep");
   const [modalIsShown, setModalIsShown] = useState(false);
   const [message, setMessage] = useState("");
+
+     const sectionTitleClasses = darkModeOn
+       ? `section-title section-title--dark`
+       : `section-title section-title--light`;
+
+  const emailClasses = darkModeOn
+    ? `${classes["email-dark"]}`
+    : `${classes["email-light"]}`;
+  
+  const formClasses = darkModeOn
+    ? `${classes.form} ${classes.dark}`
+    : `${classes.form} ${classes.light}`;
+  
+   const formMessageClasses = darkModeOn
+     ? `${classes["form__message"]} ${classes.dark}`
+     : `${classes["form__message"]} ${classes.light}`;
+  
+    const emailInputClasses = darkModeOn
+      ? `${classes["form__input--email"]} ${classes.dark}`
+      : `${classes["form__input--email"]} ${classes.light}`;
+  
+    const nameInputClasses = darkModeOn
+      ? `${classes["form__input--first-name"]} ${classes.dark}`
+      : `${classes["form__input--first-name"]} ${classes.light}`;
+  
+      const subjectInputClasses = darkModeOn
+        ? `${classes["form__input--subject"]} ${classes.dark}`
+        : `${classes["form__input--subject"]} ${classes.light}`;
 
   useEffect(() => {
     if (state.succeeded) {
@@ -21,13 +51,13 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id="contact" className={classes["contact-section"]}>
-      <h1 className="section-title">Contact</h1>
+      <h1 className={sectionTitleClasses}>Contact</h1>
 
-      <h2 className={classes["email"]}>brock.dallman@gmail.com</h2>
+      <h2 className={emailClasses}>brock.dallman@gmail.com</h2>
 
       <form
         onSubmit={handleSubmit}
-        className={classes.form}
+        className={formClasses}
         id="contact-form"
         aria-label="Contact form"
       >
@@ -35,7 +65,7 @@ const ContactSection: React.FC = () => {
           <div className={classes.form__group__top}>
             <label htmlFor="name">Your Name</label>
             <input
-              className={classes["form__input--first-name"]}
+              className={nameInputClasses}
               type="text"
               id="name"
               name="name"
@@ -45,7 +75,7 @@ const ContactSection: React.FC = () => {
           <div className={classes.form__group__top}>
             <label htmlFor="email">Your Email</label>
             <input
-              className={classes["form__input--email"]}
+              className={emailInputClasses}
               type="email"
               id="email"
               name="email"
@@ -57,7 +87,7 @@ const ContactSection: React.FC = () => {
         <div className={classes.form__group}>
           <label htmlFor="subject">Subject</label>
           <input
-            className={classes["form__input--subject"]}
+            className={subjectInputClasses}
             type="text"
             id="subject"
             name="subject"
@@ -67,13 +97,14 @@ const ContactSection: React.FC = () => {
         <div className={classes.form__group}>
           <label htmlFor="message">Message</label>
           <textarea
-            className={classes.form__message}
+            className={formMessageClasses}
             name="message"
             id="message"
             required
           />
         </div>
         <button
+          className={classes['form-submit-btn']}
           type="submit"
           disabled={state.submitting}
           aria-label="Submit Form Button"

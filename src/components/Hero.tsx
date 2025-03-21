@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
-import classes from "./Header.module.css";
+import { useTheme } from '../store/theme-context';
+import classes from "./Hero.module.css";
 import Image from "next/image";
 import BioPic from "../../public/assets/imgs/BROCK_MTN-PORTRAIT-HQ.jpg";
 import { Link } from "react-scroll";
+  
 
 const Header: React.FC = () => {
+ const { darkModeOn } = useTheme();
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState(0);
   const [aboutCrossed, setAboutCrossed] = useState(false);
@@ -33,19 +36,31 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [aboutCrossed]);
 
+  const heroThemeClasses = darkModeOn
+    ? `${classes.hero} ${classes["hero-dark"]}`
+    : `${classes.hero} ${classes["hero-light"]}`;
+
   const heroClasses = aboutCrossed
     ? `${classes["hero__content"]} ${classes["fade-out"]}`
     : classes["hero__content"];
+  
+  const textClasses = darkModeOn
+    ? `${classes["hero__text--dark"]} ${classes["hero__text"]}`
+    : `${classes["hero__text--light"]} ${classes["hero__text"]}`;
+  
+    const imgContainerClasses = darkModeOn
+      ? `${classes["hero__img-container"]} ${classes["hero__img-container--dark"]}`
+      : `${classes["hero__img-container"]} ${classes["hero__img-container--light"]}`;
 
   return (
     <React.Fragment>
       <div id="home"></div>
-      <header
-        className={classes.header}
+      <section
+        className={heroThemeClasses}
         style={{ transform: `translateY(${offsetY * 0.5}px)` }}
       >
         <div className={heroClasses}>
-          <div className={classes["hero__text"]}>
+          <div className={textClasses}>
             <h1>BROCK DALLMAN</h1>
             <h2>Web Developer</h2>
             <p>
@@ -64,11 +79,11 @@ const Header: React.FC = () => {
               Get In Touch
             </Link>
           </div>
-          <div className={classes["hero__img-container"]}>
+          <div className={imgContainerClasses}>
             <Image src={BioPic} alt="Brock Dallman" priority />
           </div>
         </div>
-      </header>
+      </section>
     </React.Fragment>
   );
 };

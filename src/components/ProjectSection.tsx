@@ -13,13 +13,19 @@ import SanaiIMG from "../../public/assets/imgs/sanai-screenshot.jpg";
 import MobileProjectsSection from "./MobileProjectsSection";
 import Project from "./projects/Project";
 import ProjectAlt from "./projects/ProjectAlt";
+import { useTheme } from "../store/theme-context";
 
 
 const ProjectsSection: React.FC = () => {
+    const { darkModeOn, toggleDarkMode } = useTheme();
+
+    const sectionTitleClasses = darkModeOn
+      ? `section-title section-title--dark`
+      : `section-title section-title--light`;
 
   return (
     <section id="projects" className={classes["projects-section"]}>
-      <h1 className="section-title">Projects</h1>
+      <h1 className={sectionTitleClasses}>Projects</h1>
 
       <div className={classes["projects"]}>
         <Project

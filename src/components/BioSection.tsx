@@ -2,17 +2,27 @@ import React from "react";
 import classes from "./BioSection.module.css";
 import Image from 'next/image';
 import BioPic from "../../public/assets/imgs/WA_BROCK_SUMMIT_POSE.jpg";
+import { useTheme } from "../store/theme-context";
 
 const BioSection: React.FC = () => {
+  const { darkModeOn } = useTheme();
+  const bioClasses = darkModeOn
+    ? `${classes["bio-container"]} ${classes["bio-container-dark"]}`
+    : `${classes["bio-container"]} ${classes["bio-container-light"]}`;
+  
+  const sectionTitleClasses = darkModeOn
+    ? `section-title section-title--dark`
+    : `section-title section-title--light`;
+  
+  
   return (
     <section id="about" className={classes["bio-section"]}>
-      <h1 className="section-title">About Me</h1>
-      <div className={classes["bio-container"]}>
+      <h1 className={sectionTitleClasses}>About Me</h1>
+      <div className={bioClasses}>
         <div className={classes["bio-text"]}>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a&nbsp;
             <a
-              className={classes["bio-link"]}
               href="https://brockdallmanphotography.com/"
               target="_blank"
               rel="noreferrer"
@@ -22,7 +32,6 @@ const BioSection: React.FC = () => {
             </a>
             &nbsp;and&nbsp;
             <a
-              className={classes["bio-link"]}
               href="https://brockdallmanart.com/"
               target="_blank"
               rel="noreferrer"

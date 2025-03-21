@@ -1,12 +1,19 @@
 .footer {
   width: 100%;
   height: 15rem;
-  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
   transition: all 400ms ease-in-out;
+}
+
+.footer-dark {
+   color: #ffffff;
+}
+
+.footer-light {
+  color: #000;
 }
 
 .logo-container {

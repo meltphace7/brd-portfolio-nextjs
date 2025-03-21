@@ -1,7 +1,17 @@
 :root {
+  /*-- DARK MODE --*/
   --color-primary: #bdfe00;
   --color-secondary: #1b1b1b;
   --color-tertiary: #6a6a6a;
+  /*-- LIGHT MODE --*/
+  --color-primary-lm: #2c630e;
+  --color-secondary-lm: #ffffff;
+  --color-tertiary-lm: #6a6a6a;
+
+  --text-shadow: 4px 2px 0px rgba(0, 0, 0, 1);
+  --box-shadow: 4px 2px 0px rgba(0, 0, 0, 1);
+
+  --ms-theme: 500ms;
 }
 
 @font-face {
@@ -191,9 +201,40 @@ textarea {
   text-shadow: var(--text-shadow); */
 }
 
+.section-title--dark {
+  color: var(--color-primary);
+}
+
+.section-title--light {
+  color: var(--color-primary-lm);
+}
+
 @media (max-width: 50em) {
   .section-title {
     font-size: 8vw;
     margin-bottom: 5rem;
   }
+}
+
+.dark {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.background-dark {
+
+  background: #555555;
+  background: radial-gradient(circle, #555555 0%, #000000 100%);
+  background-color: red;
+}
+
+.background-light {
+
+  background: #ffffff;
+  background: radial-gradient(circle, #ffffff 0%, #d4d4d4 100%);
 }

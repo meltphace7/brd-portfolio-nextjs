@@ -6,13 +6,15 @@
   align-items: center;
 }
 
-.email {
+.email-dark {
   color: #fff;
 }
 
+.email-light {
+  color: #000;
+}
+
 .form {
-  background-color: #0505059b;
-  color: #fff;
   border-radius: 5px;
   width: 55%;
   min-height: 45rem;
@@ -63,8 +65,6 @@
   padding: 0.5rem;
   height: 3rem;
   border-radius: 3px;
-  background-color: #000;
-  color: #fff;
     border: 1px solid var(--color-tertiary);
 }
 
@@ -78,8 +78,6 @@
   min-width: 98%;
   padding: 0.5rem;
   border-radius: 3px;
- background-color: #000;
-  color: #ffffff;
   border: 1px solid #808080;
 }
 
@@ -88,14 +86,22 @@
    border: 1px solid var(--color-primary);
 }
 
+.dark {
+   background-color: #000;
+    color: #ffffff;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+}
+
 
 .form__input--subject {
   width: 98%;
   padding: 0.5rem;
   height: 3rem;
   border-radius: 3px;
- background-color: #000;
-  color: #ffffff;
   border: 1px solid #808080;
 }
 
@@ -108,19 +114,34 @@
   margin: auto 0;
   font-size: 2rem;
   text-transform: uppercase;
-  background-color: #000000;
-  color: #ffffff;
-  border: 1px solid #ffffff;
   height: 6rem;
   border-radius: 3px;
   transition: all 200ms;
   cursor: pointer;
+  border: unset;
 }
 
-.form button:hover {
+.dark button {
+ background-color: var(--color-primary);
   color: #000;
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+}
+
+.light button {
+ background-color: var(--color-primary-lm);
+ border: 1px solid #fff;
+  color: #fff;
+}
+
+.dark button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+ 
+}
+
+.light button:hover {
+  color: #fff;
+  background-color: #000;
  
 }
 

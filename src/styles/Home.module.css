@@ -11,10 +11,18 @@
   width: 100%;
   height: 100vh;
   z-index: -2;
-  background: rgb(85, 85, 85);
+}
+
+.background-dark {
+  background: #555555;
+  background: radial-gradient(circle, #555555 0%, #000000 100%);
+}
+
+.background-light {
+  background: #ffffff;
   background: radial-gradient(
     circle,
-    rgba(85, 85, 85, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    #ffffff 0%,
+    #e5e5e5 100%
   );
 }

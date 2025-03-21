@@ -2,8 +2,9 @@ import React, {useState, useEffect } from "react";
 import Image from "next/image";
 import classes from "./Project.module.css";
 import { useInView } from "react-intersection-observer";
-import LinkIcon from "../../../public/assets/imgs/link-icon.svg";
-
+import LinkIcon from "../../../public/assets/imgs/link-icon-black.svg";
+import LinkIconWhite from "../../../public/assets/imgs/link-icon-white.svg";
+import { useTheme } from "../../store/theme-context";
 
 interface ProjectsProps {
   title: string;
@@ -14,6 +15,28 @@ interface ProjectsProps {
 }
 
 const Project: React.FC<ProjectsProps> = (props) => {
+  const { darkModeOn } = useTheme();
+
+  const projDescClasses = darkModeOn
+    ? `${classes["project-description"]} ${classes["project-description-dark"]}`
+    : `${classes["project-description"]} ${classes["project-description-light"]}`;
+  
+   const projHeaderClasses = darkModeOn
+     ? `${classes["project-header"]} ${classes["project-header--dark"]}`
+     : `${classes["project-header"]} ${classes["project-header--light"]}`;
+  
+  const imgContainerClasses = darkModeOn
+    ? `${classes["project-img_container"]} ${classes["project-img_container--dark"]}`
+    : `${classes["project-img_container"]} ${classes["project-img_container--light"]}`;
+  
+   const linkBtnClasses = darkModeOn
+     ? `${classes["project-link-btn"]} ${classes["project-link-btn--dark"]}`
+     : `${classes["project-link-btn"]} ${classes["project-link-btn--light"]}`;
+  
+     const linkIcon = darkModeOn
+       ? LinkIcon
+       : LinkIconWhite;
+  
   const [projectRevealed, setProjectRevealed] = useState(false);
 
   // Intersection Observer pop-up / fade animation
@@ -46,7 +69,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
       >
         {" "}
       </a>
-      <div className={classes["project-img_container"]}>
+      <div className={imgContainerClasses}>
         <Image
           className={classes["project-img"]}
           src={props.image}
@@ -55,7 +78,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
         />
       </div>
       <div className={classes["project-text"]}>
-        <div className={`${classes["project-header"]} ${classes["tt-header"]}`}>
+        <div className={`${projHeaderClasses} ${classes["tt-header"]}`}>
           <h2>Featured Project</h2>
           <h1>
             <a
@@ -69,7 +92,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
             </a>
           </h1>
         </div>
-        <div className={classes["project-description"]}>
+        <div className={projDescClasses}>
           <p>{props.description}</p>
           <ul className={classes["project-technologies"]}>
             {props.stack.map((s: string, i: number) => {
@@ -78,7 +101,7 @@ const Project: React.FC<ProjectsProps> = (props) => {
           </ul>
         </div>
         <a
-          className={classes["project-link-btn"]}
+          className={linkBtnClasses}
           href={props.link}
           target="_blank"
           rel="noreferrer"
@@ -88,11 +111,12 @@ const Project: React.FC<ProjectsProps> = (props) => {
             {" "}
             <Image
               className={classes["project-img"]}
-              src={LinkIcon}
+              src={linkIcon}
               alt={`Link Icon to ${props.title} website`}
               unoptimized
             />
           </span>
+          
           {`${props.title}`}
         </a>
       </div>

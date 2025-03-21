@@ -20,8 +20,12 @@
   height: 70rem;
 }
 
-.project-link:hover ~ .project-img {
+.project-link:hover ~ .project-img--dark {
   border: 2px solid var(--color-primary);
+}
+
+.project-link:hover ~ .project-img--light {
+  border: 2px solid var(--color-primary-lm);
 }
 
 .project-title {
@@ -64,12 +68,25 @@
   font-size: 2rem;
 }
 
+.project-header--dark h2 {
+  color: var(--color-primary);
+}
+
+.project-header--dark a {
+  color: #fff;
+}
+
+.project-header--light h2 {
+  color: var(--color-primary-lm);
+}
+
+.project-header--light a {
+  color: #000;
+}
+
 .project-description {
   width: 97%;
   margin: 2rem 0;
-  background-color: var(--color-secondary);
-  color: var(--color-text-grey);
-  border: 1px solid var(--color-tertiary);
   z-index: 2;
   padding: 1rem;
   border-radius: 5px;
@@ -80,6 +97,28 @@
 
 .project-description p {
   margin-bottom: 3rem;
+}
+
+.project-description--dark {
+   color: #fff;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-tertiary);
+}
+
+.project-description--light {
+  color: #000;
+    background-color: var(--color-secondary-lm);
+  border: 1px solid var(--color-tertiary);
+  
+}
+
+.project-description--dark li {
+  color: var(--color-primary);
+}
+
+.project-description--light li {
+  color: var(--color-primary-lm);
+  
 }
 
 .project-technologies {
@@ -94,14 +133,13 @@
 .project-technologies li {
 
   font-size: 1.6rem;
-  color: var(--color-primary);
+
 }
 
 .project-link-btn {
   margin-top: 2rem;
   padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: #000;
+
   border-radius: 5px;
   font-size: 2rem;
   display: flex;
@@ -117,12 +155,23 @@
   width: auto;
 }
 
-.project-link-btn:hover {
-  background-color: #fff;
+.project-link-btn--dark {
+  background-color: var(--color-primary);
   color: #000;
-  border-radius: 5px;
-  font-size: 2rem;
+}
+
+.project-link-btn--light {
+  background-color: var(--color-primary-lm);
+  color: #000;
+}
+
+.project-link-btn:hover {
   gap: 3rem;
+}
+
+.project-link-btn--dark:hover {
+    background-color: #fff;
+  color: #000;
 }
 
 

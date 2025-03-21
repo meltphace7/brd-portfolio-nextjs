@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
   padding: 5rem 0 10rem 0;
   z-index: 1;
 }
@@ -15,13 +14,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-secondary);
-  color: white;
   border: 1px solid var(--color-tertiary);
   border-radius: 5px;
   -webkit-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
+}
+
+.bio-container-light {
+color: #000;
+background-color: var(--color-secondary-lm);
+}
+
+.bio-container-dark {
+  color: #fff;
+   background-color: var(--color-secondary);
+  
 }
 
 .bio-text {
@@ -30,6 +38,24 @@
 
 .bio-text p {
   margin-bottom: 2rem;
+}
+
+.bio-container a {
+   color: var(--color-primary);
+  transition: color 150ms ease-in;
+  text-decoration: underline;
+}
+
+.bio-container-dark a {
+  color: var(--color-primary);
+}
+
+.bio-container-light a {
+  color: var(--color-primary-lm);
+}
+
+.bio-container a :hover {
+  color: #fff;
 }
 
 .bio-img__container {
@@ -51,15 +77,6 @@ box-shadow: 7px 7px 0px -2px #000;
   object-fit: cover;
 }
 
-.bio-link {
-  color: var(--color-primary);
-  transition: color 150ms ease-in;
-  text-decoration: underline;
-}
-
-.bio-link:hover {
-  color: #fff;
-}
 
 @media (max-width: 60em) {
   .bio-container {

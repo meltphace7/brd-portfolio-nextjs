@@ -16,12 +16,15 @@
   height: 30rem;
 }
 
-.project-link:hover ~ .project-img_container {
+.project-link:hover ~ .project-img_container--dark {
   border: 2px solid var(--color-primary);
 }
 
+.project-link:hover ~ .project-img_container--light {
+  border: 2px solid var(--color-primary-lm);
+}
+
 .project-title {
-  color: white;
  font-family: "Clash-Display", sans-serif;
  font-weight: 500;
   font-size: 4.2rem;
@@ -65,7 +68,6 @@
 }
 
 .project-text-alt {
-
   align-items: flex-start;
 }
 
@@ -91,13 +93,28 @@
    font-size: 2rem;
 }
 
+.project-header--dark h1 {
+  color: #fff;
+}
+
+.project-header--dark h2 {
+  color: var(--color-primary);
+}
+
+.project-header--light h1 {
+   color: #000;
+}
+
+.project-header--light h2 {
+  color: var(--color-primary-lm);
+}
+
 .project-description,
 .project-description-alt {
     border: 1px solid var(--color-tertiary);
   width: 110%;
   margin: 2rem 0;
   background-color: var(--color-secondary);
-  color: var(--color-text-grey);
   z-index: 2;
   padding: 2rem 2rem 2rem 4rem;
   border-radius: 5px;
@@ -105,6 +122,24 @@
   -moz-box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.49);
 
+}
+
+.project-description-dark {
+  color: #fff;
+  background-color: var(--color-secondary);
+}
+
+.project-description-light {
+  color: #000;
+    background-color: var(--color-secondary-lm);
+}
+
+.project-description-dark .project-technologies li {
+color: var(--color-primary);
+}
+
+.project-description-light .project-technologies li {
+color: var(--color-primary-lm);
 }
 
 .project-description p,
@@ -124,7 +159,6 @@
 
 .project-technologies li {
   font-size: 1.6rem;
-  color: var(--color-primary);
 }
 
 .hidden {
@@ -140,8 +174,6 @@
 .project-link-btn {
   margin-top: 2rem;
   padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: #000;
   border-radius: 5px;
   font-size: 2rem;
   display: flex;
@@ -151,19 +183,41 @@
   text-transform: uppercase;
 }
 
+.project-link-btn--dark {
+    background-color: var(--color-primary);
+  color: #000;
+}
+
+.project-link-btn--dark:hover {
+    background-color: #fff;
+      gap: 3rem;
+ 
+}
+
+.project-link-btn--light {
+    background-color: var(--color-primary-lm);
+  color: #fff;
+}
+
+.project-link-btn--light:hover {
+    background-color: #000;
+      gap: 3rem;
+ 
+}
+
 
 .project-link-btn span img {
   height: 2rem;
   width: auto;
 }
 
-.project-link-btn:hover {
+/* .project-link-btn:hover {
   background-color: #fff;
   color: #000;
   border-radius: 5px;
   font-size: 2rem;
   gap: 3rem;
-}
+} */
 
 @media (max-width: 48em) {
   .projects {

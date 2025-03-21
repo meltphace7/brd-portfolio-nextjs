@@ -2,7 +2,9 @@ import React, {useState, useEffect } from 'react';
 import Image from 'next/image';
 import classes from './ProjectMobile.module.css';
 import { useInView } from "react-intersection-observer";
-import LinkIconAlt from "../../../public/assets/imgs/link-icon-alt.svg";
+import LinkIcon from "../../../public/assets/imgs/link-icon-black-alt.svg";
+import LinkIconWhite from "../../../public/assets/imgs/link-icon-white-alt.svg";
+import { useTheme } from "../../store/theme-context";
 
 interface ProjectMobileProps {
   title: string;
@@ -13,6 +15,30 @@ interface ProjectMobileProps {
 }
 
 const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
+  const { darkModeOn } = useTheme();
+
+  const projHeaderClasses = darkModeOn
+    ? `${classes["project-header"]} ${classes["project-header--dark"]}`
+    : `${classes["project-header"]} ${classes["project-header--light"]}`;
+  
+  const projDescriptionClasses = darkModeOn
+    ? `${classes["project-description"]} ${classes["project-description--dark"]}`
+    : `${classes["project-description"]} ${classes["project-description--light"]}`;
+  
+   const linkBtnClasses = darkModeOn
+     ? `${classes["project-link-btn"]} ${classes["project-link-btn--dark"]}`
+     : `${classes["project-link-btn"]} ${classes["project-link-btn--light"]}`;
+  
+    const prjImageClasses = darkModeOn
+      ? `${classes["project-img"]} ${classes["project-img--dark"]}`
+      : `${classes["project-img"]} ${classes["project-img--light"]}`;
+  
+   const linkIcon = darkModeOn ? LinkIcon : LinkIconWhite;
+  
+
+
+
+
   const [projectRevealed, setProjectRevealed] = useState(false);
 
   // Intersection Observer pop-up / fade animation
@@ -44,7 +70,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
       >
         {" "}
       </a>
-      <div className={classes["project-header"]}>
+      <div className={projHeaderClasses}>
         <h2>Featured Project</h2>
         <a
           className={classes["project-title"]}
@@ -57,13 +83,13 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
         </a>
       </div>
       <Image
-        className={classes["project-img"]}
+        className={prjImageClasses}
         src={props.image}
         alt={`Screenshot of Brock Dallman's ${props.title} website`}
         unoptimized
       />
       <div className={classes["project-text"]}>
-        <div className={classes["project-description"]}>
+        <div className={projDescriptionClasses}>
           <p>{props.description}</p>
           <ul className={classes["project-technologies"]}>
             {props.stack.map((text: string, index: number) => {
@@ -73,7 +99,7 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
         </div>
       </div>
       <a
-        className={classes["project-link-btn"]}
+        className={linkBtnClasses}
         href={props.link}
         target="_blank"
         rel="noreferrer"
@@ -83,8 +109,8 @@ const ProjectMobile: React.FC<ProjectMobileProps> = (props) => {
         <span>
           {" "}
           <Image
-            className={classes["project-img"]}
-            src={LinkIconAlt}
+            // className={classes["project-img"]}
+            src={linkIcon}
             alt={`Link Icon to ${props.title} website`}
             unoptimized
           />

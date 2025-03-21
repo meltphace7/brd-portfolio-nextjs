@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+import {ThemeProvider} from '../store/theme-context'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,7 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
       <Analytics />
     </>
   );

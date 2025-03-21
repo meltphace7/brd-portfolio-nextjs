@@ -13,14 +13,28 @@ import { SiTypescript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
-// import Icon from "../../public/assets/imgs/mongoose.js";
 import { SiMongoose } from "react-icons/si";
+import { useTheme } from "../store/theme-context";
 
 const Skills: React.FC = () => {
+  const { darkModeOn } = useTheme();
+
+  const sectionTitleClasses = darkModeOn
+    ? `section-title section-title--dark`
+    : `section-title section-title--light`;
+
+  const skillsClasses = darkModeOn
+    ? `${classes["skills-container"]} ${classes["skills-container-dark"]}`
+    : `${classes["skills-container"]} ${classes["skills-container-light"]}`;
+  
+    const iconClasses = darkModeOn
+      ? `${classes["icon--dark"]}`
+      : `${classes["icon--light"]}`;
+  
   return (
     <section id="expertise" className={classes["skills-section"]}>
-      <h1 className="section-title">Expertise</h1>
-      <div className={classes["skills-container"]}>
+      <h1 className={sectionTitleClasses}>Expertise</h1>
+      <div className={skillsClasses}>
         <div className={classes["skills-overview"]}>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Driven by a passion
@@ -75,7 +89,6 @@ const Skills: React.FC = () => {
           <p>
             Click on the following link for my{" "}
             <Link
-              className={classes.link}
               href="/certs"
               aria-label="See Brock Dallman's Web Development Certifications"
             >
@@ -83,7 +96,6 @@ const Skills: React.FC = () => {
             </Link>{" "}
             and you can find my project repos on my{" "}
             <a
-              className={classes.link}
               href="https://github.com/meltphace7"
               target="_blank"
               aria-label="Link to https://github.com/meltphace7"
@@ -98,60 +110,60 @@ const Skills: React.FC = () => {
 
           <ul className={classes["skills-grid"]}>
             <li className={classes["skill"]}>
-              <SiJavascript className={classes["icon"]} size={20} />
+              <SiJavascript className={iconClasses} size={20} />
               <p>Javascript</p>
             </li>
             <li className={classes["skill"]}>
-              <SiTypescript className={classes["icon"]} size={20} />
+              <SiTypescript className={iconClasses} size={20} />
               <p>Typescript</p>
             </li>
             <li className={classes["skill"]}>
-              <SiReact className={classes["icon"]} size={20} />
+              <SiReact className={iconClasses} size={20} />
               <p>React</p>
             </li>
             <li className={classes["skill"]}>
-              <SiNextdotjs className={classes["icon"]} size={20} />
+              <SiNextdotjs className={iconClasses} size={20} />
               <p>NextJS</p>
             </li>
 
             <li className={classes["skill"]}>
-              <SiHtml5 className={classes["icon"]} size={20} />
+              <SiHtml5 className={iconClasses} size={20} />
               <p>HTML</p>
             </li>
             <li className={classes["skill"]}>
-              <SiCss3 className={classes["icon"]} size={20} />
+              <SiCss3 className={iconClasses} size={20} />
               <p>CSS</p>
             </li>
             <li className={classes["skill"]}>
-              <SiSass className={classes["icon"]} size={20} />
+              <SiSass className={iconClasses} size={20} />
               <p>SASS</p>
             </li>
             <li className={classes["skill"]}>
-              <SiRedux className={classes["icon"]} size={20} />
+              <SiRedux className={iconClasses} size={20} />
               <p>Redux</p>
             </li>
             <li className={classes["skill"]}>
-              <FaNodeJs className={classes["icon"]} size={20} />
+              <FaNodeJs className={iconClasses} size={20} />
               <p>NodeJs</p>
             </li>
             <li className={classes["skill"]}>
-              <FaNodeJs className={classes["icon"]} size={20} />
+              <FaNodeJs className={iconClasses} size={20} />
               <p>Express</p>
             </li>
             <li className={classes["skill"]}>
-              <SiMongodb className={classes["icon"]} size={20} />
+              <SiMongodb className={iconClasses} size={20} />
               <p>MongoDB</p>
             </li>
             <li className={classes["skill"]}>
-              <SiMongoose className={classes["icon"]} size={20} />
+              <SiMongoose className={iconClasses} size={20} />
               <p>Mongoose</p>
             </li>
             <li className={classes["skill"]}>
-              <FaPhp className={classes["icon"]} size={20} />
+              <FaPhp className={iconClasses} size={20} />
               <p>PHP</p>
             </li>
             <li className={classes["skill"]}>
-              <FaWordpress className={classes["icon"]} size={20} />
+              <FaWordpress className={iconClasses} size={20} />
               <p>Wordpress</p>
             </li>
           </ul>
